@@ -1,0 +1,161 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/candidates/', label: 'Candidates' },
+  { href: '/parties/', label: 'Parties' },
+  { href: '/issues/', label: 'Issues' },
+  { href: '/why-a-by-election/', label: 'Why a by-election?' },
+  { href: '/how-to-vote/', label: 'How to vote' },
+  { href: '/about/', label: 'About' },
+];
+
+const current = Astro.url.pathname;
+---
+
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL('/og.png', Astro.site)} />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+      <div class="header-inner">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">✕</span>
+          Clacton Candidates
+        </a>
+        <nav aria-label="Main">
+          <ul>
+            {nav.map((item) => (
+              <li>
+                <a
+                  href={item.href}
+                  aria-current={current === item.href ? 'page' : undefined}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer>
+      <div class="footer-inner">
+        <p>
+          <strong>Clacton Candidates</strong> is an independent, non-partisan voter
+          information site for the 2026 Clacton by-election. It is not affiliated
+          with any political party or candidate.
+        </p>
+        <p class="small">
+          Every page cites its sources. Spotted an error? See the <a href="/about/">about page</a> for
+          how to request a correction. Election rules and dates are confirmed
+          by <a href="https://www.electoralcommission.org.uk/">the Electoral Commission</a> and <a href="https://www.tendringdc.gov.uk/">Tendring District Council</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+
+  .brand-mark {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accent-contrast);
+    border-radius: 6px;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-right: 0.35rem;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--ink-secondary);
+    font-size: 0.9375rem;
+    padding: 0.25rem 0;
+  }
+
+  nav a:hover { color: var(--ink); text-decoration: underline; }
+
+  nav a[aria-current='page'] {
+    color: var(--ink);
+    font-weight: 600;
+    border-bottom: 2px solid var(--accent);
+  }
+
+  footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    color: var(--ink-secondary);
+    font-size: 0.9375rem;
+  }
+
+  .footer-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.5rem 1rem 2rem;
+  }
+</style>

@@ -1,0 +1,71 @@
+---
+import timeline from '../data/timeline.json';
+
+const dateFmt = (item: (typeof timeline)[number]) => {
+  if (item.dateDisplay) return item.dateDisplay;
+  if (item.date)
+    return new Date(item.date).toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    });
+  return 'Date TBC';
+};
+---
+
+<ol class="timeline">
+  {timeline.map((item) => (
+    <li class:list={[{ pending: !item.confirmed }]}>
+      <p class="date">{dateFmt(item)}</p>
+      <h3>{item.title}</h3>
+      <p class="detail">{item.detail}</p>
+    </li>
+  ))}
+</ol>
+
+<style>
+  .timeline {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding: 0;
+  }
+
+  li {
+    position: relative;
+    padding: 0 0 1.75rem 1.75rem;
+    border-left: 2px solid var(--border);
+    margin-left: 0.5rem;
+  }
+
+  li:last-child { padding-bottom: 0.25rem; }
+
+  li::before {
+    content: '';
+    position: absolute;
+    left: -0.5rem;
+    top: 0.3rem;
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 999px;
+    background: var(--accent);
+    border: 2px solid var(--bg);
+  }
+
+  li.pending::before {
+    background: var(--bg);
+    border: 2px solid var(--ink-muted);
+  }
+
+  .date {
+    margin: 0;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--ink-muted);
+  }
+
+  li.pending h3, li.pending .detail { color: var(--ink-secondary); }
+
+  .detail { margin: 0.25rem 0 0; }
+</style>

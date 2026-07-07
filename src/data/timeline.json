@@ -1,0 +1,49 @@
+[
+  {
+    "date": "2024-07-04",
+    "title": "Farage elected MP for Clacton",
+    "detail": "Nigel Farage wins Clacton for Reform UK with 46.2% of the vote and a majority of 8,405 — a 45.1-point swing from the Conservatives, the largest at any UK general election.",
+    "confirmed": true
+  },
+  {
+    "date": "2026-05-01",
+    "dateDisplay": "May 2026",
+    "title": "Standards investigation opened",
+    "detail": "The Parliamentary Commissioner for Standards opens an investigation into a £5 million personal gift to Farage from cryptocurrency investor Christopher Harborne, which was not declared to parliamentary authorities. Farage says the gift was for his personal security and denies breaking any rules.",
+    "confirmed": true
+  },
+  {
+    "date": "2026-06-28",
+    "dateDisplay": "Late June 2026",
+    "title": "Further revelations",
+    "detail": "A Sunday Times investigation reports that Farage's work was financially supported by his adviser George Cottrell, a convicted criminal, without the required declarations. The Liberal Democrats call for the standards inquiry to be expanded. Farage describes the investigations as an \"establishment hit job\".",
+    "confirmed": true
+  },
+  {
+    "date": "2026-07-07",
+    "title": "Farage resigns, forcing a by-election",
+    "detail": "Rather than await the outcome of the standards process — which could have led to suspension and a recall petition — Farage announces his resignation as MP at a press conference, triggering a by-election in which he intends to stand. \"I have done no wrongdoing and followed the rules,\" he says.",
+    "confirmed": true
+  },
+  {
+    "date": null,
+    "dateDisplay": "Date TBC",
+    "title": "Writ moved",
+    "detail": "The formal by-election process starts when the House of Commons moves the writ. By convention this is done by the party that held the seat. The writ sets the timetable: nominations, postal vote deadlines and polling day.",
+    "confirmed": false
+  },
+  {
+    "date": null,
+    "dateDisplay": "Date TBC",
+    "title": "Nominations close — official candidate list published",
+    "detail": "The Statement of Persons Nominated (SOPN) is the definitive list of candidates on the ballot paper. This site will be updated the day it is published.",
+    "confirmed": false
+  },
+  {
+    "date": null,
+    "dateDisplay": "Date TBC",
+    "title": "Polling day",
+    "detail": "Polls open 7am to 10pm. Remember photo ID.",
+    "confirmed": false
+  }
+]

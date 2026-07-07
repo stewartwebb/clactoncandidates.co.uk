@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "reform-uk",
+    "name": "Reform UK",
+    "shortName": "Reform",
+    "color": "#12b6cf",
+    "leader": "Nigel Farage",
+    "website": "https://www.reformparty.uk",
+    "expectedToStand": true,
+    "summary": "Reform UK holds the seat, won by Nigel Farage in 2024 with 46.2% of the vote. The party campaigns on cutting immigration, leaving the European Convention on Human Rights, lower taxes, and reforming public services. Farage has confirmed he will stand again in the by-election."
+  },
+  {
+    "slug": "conservative",
+    "name": "Conservative and Unionist Party",
+    "shortName": "Conservative",
+    "color": "#0087dc",
+    "leader": "Kemi Badenoch",
+    "website": "https://www.conservatives.com",
+    "expectedToStand": true,
+    "summary": "The Conservatives held Clacton from 2010 to 2024 (with a brief UKIP interlude in 2014–15) and finished second in 2024 with 27.9%. The party has reportedly been preparing for a potential by-election in the seat since the standards investigation into Farage was launched in May 2026. No candidate has been announced yet."
+  },
+  {
+    "slug": "labour",
+    "name": "Labour Party",
+    "shortName": "Labour",
+    "color": "#e4003b",
+    "leader": "Keir Starmer",
+    "website": "https://labour.org.uk",
+    "expectedToStand": true,
+    "summary": "Labour, the party of government nationally, finished third in Clacton in 2024 with 16.2% of the vote. No candidate has been announced yet."
+  },
+  {
+    "slug": "liberal-democrats",
+    "name": "Liberal Democrats",
+    "shortName": "Lib Dem",
+    "color": "#faa61a",
+    "leader": "Ed Davey",
+    "website": "https://www.libdems.org.uk",
+    "expectedToStand": true,
+    "summary": "The Liberal Democrats took 4.4% in Clacton in 2024. The party led calls for an expanded standards inquiry into the financial support received by Nigel Farage. No candidate has been announced yet."
+  },
+  {
+    "slug": "green",
+    "name": "Green Party of England and Wales",
+    "shortName": "Green",
+    "color": "#02a95b",
+    "leader": "Zack Polanski",
+    "website": "https://www.greenparty.org.uk",
+    "expectedToStand": true,
+    "summary": "The Green Party polled 4.2% in Clacton in 2024. No candidate has been announced yet."
+  },
+  {
+    "slug": "independent",
+    "name": "Independent",
+    "shortName": "Independent",
+    "color": "#999999",
+    "leader": null,
+    "website": null,
+    "expectedToStand": false,
+    "summary": "Independent candidates and smaller parties frequently stand in high-profile by-elections. Any independents who declare will be listed here."
+  }
+]

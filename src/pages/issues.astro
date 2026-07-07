@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import IssueCard from '../components/IssueCard.astro';
+import issues from '../data/issues.json';
+---
+
+<Base
+  title="The Issues — Clacton By-Election 2026"
+  description="The issues shaping the 2026 Clacton by-election: deprivation and regeneration, NHS access, immigration, the cost of living, the coast, and the standards controversy that triggered the vote."
+>
+  <h1>The issues</h1>
+  <p class="lede">
+    What the campaign is likely to be fought over. Each summary is factual and
+    sourced; as candidates set out their positions, we will add what each of
+    them says under the relevant issue.
+  </p>
+
+  <div class="grid">
+    {issues.map((issue) => <IssueCard issue={issue} />)}
+  </div>
+
+  <h2>About the constituency</h2>
+  <p>
+    Clacton covers the Essex coastal towns of Clacton-on-Sea, Frinton-on-Sea
+    and Walton-on-the-Naze, the village of Jaywick, and surrounding rural
+    parishes in Tendring district. It has one of the oldest age profiles of
+    any UK constituency and, by several measures, some of the deepest
+    deprivation in England alongside some very comfortable retirement areas —
+    a mix that gives its politics a distinctive character. The seat was the
+    first ever won by UKIP at a general election (Douglas Carswell, 2015) and
+    the first won by Reform UK at a general election (Nigel Farage, 2024).
+  </p>
+  <p class="sources">
+    Sources: <a href="https://en.wikipedia.org/wiki/Clacton_(constituency)" rel="noopener">en.wikipedia.org</a>
+  </p>
+</Base>

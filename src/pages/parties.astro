@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import PartyCard from '../components/PartyCard.astro';
+import ResultsBar from '../components/ResultsBar.astro';
+import parties from '../data/parties.json';
+
+const named = parties.filter((p) => p.slug !== 'independent');
+const independent = parties.find((p) => p.slug === 'independent');
+---
+
+<Base
+  title="Parties — Clacton By-Election 2026"
+  description="The parties contesting the 2026 Clacton by-election: their leaders, platforms and 2024 performance in the constituency."
+>
+  <h1>The parties</h1>
+  <p class="lede">
+    The parties expected to contest the by-election, with how each performed
+    in Clacton at the 2024 general election. Platform summaries are kept short
+    and neutral — follow the links for each party's own material.
+  </p>
+
+  <div class="grid">
+    {named.map((p) => <PartyCard party={p} />)}
+  </div>
+
+  {independent && (
+    <>
+      <h2>Independents and smaller parties</h2>
+      <p>{independent.summary}</p>
+    </>
+  )}
+
+  <h2>The starting point: 2024</h2>
+  <ResultsBar />
+</Base>

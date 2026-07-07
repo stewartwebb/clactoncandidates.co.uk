@@ -1,0 +1,53 @@
+[
+  {
+    "slug": "deprivation-regeneration",
+    "title": "Deprivation and regeneration",
+    "summary": "Clacton is one of the most deprived constituencies in England: around 64% of residents live in areas classed as deprived by government measures, and economic inactivity stands at 46.8% against a UK average of 21.7%. Jaywick, just west of Clacton-on-Sea, has repeatedly been identified as the single most deprived neighbourhood in England. How to bring investment, jobs and services to the constituency is likely to dominate the campaign.",
+    "sources": ["https://en.wikipedia.org/wiki/Clacton_(constituency)"]
+  },
+  {
+    "slug": "nhs-and-gp-access",
+    "title": "NHS and GP access",
+    "summary": "The constituency has an older-than-average population with high levels of long-term illness, placing heavy demand on local GP surgeries, dentistry and Clacton Hospital. Access to primary care and the distance to full A&E services in Colchester are long-running local concerns.",
+    "sources": ["https://en.wikipedia.org/wiki/Clacton_(constituency)"]
+  },
+  {
+    "slug": "immigration",
+    "title": "Immigration",
+    "summary": "Immigration was central to the 2024 campaign that elected Nigel Farage and remains one of the most salient national issues for Clacton voters, even though the constituency itself has one of the lowest foreign-born populations in the country (around 5% of residents were born outside the UK). Parties differ sharply on legal migration levels, small-boat crossings, and Britain's membership of the European Convention on Human Rights.",
+    "sources": ["https://en.wikipedia.org/wiki/Clacton_(constituency)"]
+  },
+  {
+    "slug": "cost-of-living",
+    "title": "Cost of living",
+    "summary": "With low average incomes, a high share of pensioners on fixed incomes and many residents in insecure work, energy bills, food prices, housing costs and the state pension are pocketbook issues that every candidate will be pressed on.",
+    "sources": []
+  },
+  {
+    "slug": "standards-controversy",
+    "title": "The standards controversy",
+    "summary": "The by-election exists because of it: the Parliamentary Commissioner for Standards opened an investigation in May 2026 into a £5 million personal gift to Nigel Farage from cryptocurrency investor Christopher Harborne, which was not declared to parliamentary authorities. A Sunday Times investigation separately reported undeclared financial support from his adviser George Cottrell. Farage denies wrongdoing, says he followed the rules, and describes the investigations as an \"establishment hit job\". Voters will in effect be asked to deliver their own verdict.",
+    "sources": [
+      "https://www.newstatesman.com/politics/2026/07/will-nigel-farage-be-forced-to-fight-a-by-election",
+      "https://www.lbc.co.uk/article/nigel-farage-reform-uk-face-election-5HjdcPx_2/"
+    ]
+  },
+  {
+    "slug": "coast-and-sea-defences",
+    "title": "The coast and sea defences",
+    "summary": "Clacton, Frinton, Walton-on-the-Naze and Jaywick sit on a soft, eroding coastline. Sea defences, coastal flood risk (Jaywick is among the highest-risk flood areas in the country) and the health of the seafront economy — tourism remains a major employer — are perennial local issues.",
+    "sources": []
+  },
+  {
+    "slug": "transport",
+    "title": "Transport and connectivity",
+    "summary": "The constituency depends on the Sunshine Coast railway line to Colchester and London and on the A133 road link. Campaigns here regularly feature rail service levels, bus coverage for villages and estates, and road congestion in and out of the seaside towns.",
+    "sources": []
+  },
+  {
+    "slug": "housing",
+    "title": "Housing",
+    "summary": "Clacton has large amounts of poor-quality and converted holiday housing — most visibly in Jaywick's former plotland chalets — alongside pressure from new development on surrounding villages. Housing quality, private-rented standards and where new homes should go are contested locally.",
+    "sources": ["https://en.wikipedia.org/wiki/Clacton_(constituency)"]
+  }
+]

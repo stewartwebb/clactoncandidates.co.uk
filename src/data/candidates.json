@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "nigel-farage",
+    "name": "Nigel Farage",
+    "party": "reform-uk",
+    "status": "declared",
+    "declaredDate": "2026-07-07",
+    "photo": null,
+    "bio": "Leader of Reform UK and MP for Clacton from July 2024 until his resignation on 7 July 2026. Previously leader of UKIP and the Brexit Party, and a Member of the European Parliament for South East England from 1999 to 2020. He won Clacton in 2024 with 46.2% of the vote, on the largest swing recorded at any UK general election.",
+    "whyStanding": "Farage resigned his seat while under investigation by the Parliamentary Commissioner for Standards over undeclared financial support, saying he had \"done no wrongdoing and followed the rules\" and describing the investigations as an \"establishment hit job\". He is standing again to seek a fresh mandate from Clacton voters.",
+    "keyPositions": [],
+    "links": {
+      "website": "https://www.reformparty.uk",
+      "wikipedia": "https://en.wikipedia.org/wiki/Nigel_Farage"
+    },
+    "sources": [
+      "https://www.newstatesman.com/politics/2026/07/will-nigel-farage-be-forced-to-fight-a-by-election",
+      "https://en.wikipedia.org/wiki/2026_Clacton_by-election"
+    ]
+  }
+]

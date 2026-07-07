@@ -1,0 +1,63 @@
+{
+  "constituency": "Clacton",
+  "electionName": "2026 Clacton by-election",
+  "status": "called",
+  "statusNote": "Nigel Farage resigned as MP on 7 July 2026. The by-election date will be set once the writ is moved in the House of Commons.",
+  "writMoved": false,
+  "pollingDay": null,
+  "keyDates": [
+    {
+      "label": "Farage resigns as MP",
+      "date": "2026-07-07",
+      "confirmed": true
+    },
+    {
+      "label": "Writ moved in the Commons",
+      "date": null,
+      "confirmed": false,
+      "note": "Expected after the Commons returns; sets the formal timetable"
+    },
+    {
+      "label": "Deadline to register to vote",
+      "date": null,
+      "confirmed": false,
+      "note": "Usually 12 working days before polling day"
+    },
+    {
+      "label": "Deadline for new postal vote applications",
+      "date": null,
+      "confirmed": false,
+      "note": "Usually 11 working days before polling day"
+    },
+    {
+      "label": "Statement of Persons Nominated published",
+      "date": null,
+      "confirmed": false,
+      "note": "The official candidate list, published after nominations close"
+    },
+    {
+      "label": "Polling day",
+      "date": null,
+      "confirmed": false,
+      "note": "Polls open 7am–10pm"
+    }
+  ],
+  "result2024": {
+    "electionDate": "2024-07-04",
+    "turnout": 45958,
+    "turnoutPct": 58.0,
+    "majority": 8405,
+    "majorityPct": 18.3,
+    "results": [
+      { "party": "reform-uk", "candidate": "Nigel Farage", "votes": 21225, "pct": 46.2 },
+      { "party": "conservative", "candidate": "Giles Watling", "votes": 12820, "pct": 27.9 },
+      { "party": "labour", "candidate": "Jovan Owusu-Nepaul", "votes": 7448, "pct": 16.2 },
+      { "party": "liberal-democrats", "candidate": "Matthew Bensilum", "votes": 2016, "pct": 4.4 },
+      { "party": "green", "candidate": "Natasha Osben", "votes": 1935, "pct": 4.2 },
+      { "party": "independent", "candidate": "Tony Mack", "votes": 317, "pct": 0.7 },
+      { "party": "ukip", "candidate": "Andrew Pemberton", "votes": 116, "pct": 0.3 },
+      { "party": "climate", "candidate": "Craig Jamieson", "votes": 48, "pct": 0.1 },
+      { "party": "heritage", "candidate": "Tasos Papanastasiou", "votes": 33, "pct": 0.1 }
+    ]
+  }
+}

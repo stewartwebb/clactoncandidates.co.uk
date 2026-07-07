@@ -1,0 +1,122 @@
+---
+import parties from '../data/parties.json';
+
+interface Candidate {
+  slug: string;
+  name: string;
+  party: string;
+  status: string;
+  declaredDate: string | null;
+  photo: string | null;
+  bio: string;
+  whyStanding?: string;
+  keyPositions: string[];
+  links: Record<string, string>;
+  sources: string[];
+}
+
+interface Props {
+  candidate: Candidate;
+  /** Compact cards omit the bio and sources (used on the homepage) */
+  compact?: boolean;
+}
+
+const { candidate, compact = false } = Astro.props;
+const party = parties.find((p) => p.slug === candidate.party);
+
+const statusLabels: Record<string, string> = {
+  declared: 'Declared',
+  expected: 'Expected',
+  nominated: 'Officially nominated',
+  withdrawn: 'Withdrawn',
+};
+
+const linkLabels: Record<string, string> = {
+  website: 'Website',
+  wikipedia: 'Wikipedia',
+  twitter: 'X (Twitter)',
+  facebook: 'Facebook',
+};
+
+const dateFmt = candidate.declaredDate
+  ? new Date(candidate.declaredDate).toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    })
+  : null;
+---
+
+<article class="card candidate">
+  <header>
+    <div>
+      <h3>{candidate.name}</h3>
+      <p class="party">
+        <span class="party-dot" style={`background:${party?.color ?? '#999'}`} aria-hidden="true"></span>
+        {party?.name ?? candidate.party}
+      </p>
+    </div>
+    <span class:list={['badge', { declared: candidate.status !== 'withdrawn' }]}>
+      {statusLabels[candidate.status] ?? candidate.status}
+    </span>
+  </header>
+
+  {dateFmt && <p class="small muted">Standing confirmed {dateFmt}</p>}
+
+  {!compact && <p>{candidate.bio}</p>}
+  {!compact && candidate.whyStanding && <p>{candidate.whyStanding}</p>}
+
+  {!compact && candidate.keyPositions.length > 0 && (
+    <>
+      <h4>Key positions</h4>
+      <ul>
+        {candidate.keyPositions.map((pos) => <li>{pos}</li>)}
+      </ul>
+    </>
+  )}
+
+  {Object.keys(candidate.links).length > 0 && (
+    <p class="links small">
+      {Object.entries(candidate.links)
+        .filter(([, url]) => url)
+        .map(([key, url]) => (
+          <a href={url} rel="noopener">{linkLabels[key] ?? key}</a>
+        ))}
+    </p>
+  )}
+
+  {!compact && candidate.sources.length > 0 && (
+    <p class="sources">
+      Sources: {candidate.sources.map((src, i) => (
+        <>
+          {i > 0 && ' · '}
+          <a href={src} rel="noopener">{new URL(src).hostname.replace('www.', '')}</a>
+        </>
+      ))}
+    </p>
+  )}
+</article>
+
+<style>
+  .candidate header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .party {
+    margin: 0.15rem 0 0;
+    color: var(--ink-secondary);
+    font-size: 0.9375rem;
+  }
+
+  h4 {
+    margin: 1rem 0 0.25rem;
+    font-size: 0.9375rem;
+  }
+
+  ul { margin: 0; padding-left: 1.25rem; }
+
+  .links { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 0; }
+</style>

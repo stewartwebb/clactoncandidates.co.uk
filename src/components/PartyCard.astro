@@ -1,0 +1,66 @@
+---
+import election from '../data/election.json';
+
+interface Party {
+  slug: string;
+  name: string;
+  shortName: string;
+  color: string;
+  leader: string | null;
+  website: string | null;
+  expectedToStand: boolean;
+  summary: string;
+}
+
+interface Props {
+  party: Party;
+  /** Render as an "awaiting declaration" placeholder on the candidates page */
+  awaiting?: boolean;
+}
+
+const { party, awaiting = false } = Astro.props;
+const fmt = new Intl.NumberFormat('en-GB');
+const result2024 = election.result2024.results.find((r) => r.party === party.slug);
+---
+
+<article class="card">
+  <header>
+    <h3>
+      <span class="party-dot" style={`background:${party.color}`} aria-hidden="true"></span>
+      {party.shortName}
+    </h3>
+    {awaiting && <span class="badge">No candidate yet</span>}
+  </header>
+
+  {awaiting ? (
+    <p class="muted">
+      {party.name} has not yet announced a candidate for the by-election.
+      This card will be updated as soon as one is declared.
+    </p>
+  ) : (
+    <>
+      {party.leader && <p class="small muted">Leader: {party.leader}</p>}
+      <p>{party.summary}</p>
+    </>
+  )}
+
+  {result2024 && (
+    <p class="small muted">
+      2024 in Clacton: {fmt.format(result2024.votes)} votes ({result2024.pct}%)
+      — {result2024.candidate}
+    </p>
+  )}
+
+  {!awaiting && party.website && (
+    <p class="small"><a href={party.website} rel="noopener">Party website</a></p>
+  )}
+</article>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+</style>

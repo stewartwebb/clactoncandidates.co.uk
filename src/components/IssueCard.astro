@@ -1,0 +1,29 @@
+---
+interface Issue {
+  slug: string;
+  title: string;
+  summary: string;
+  sources: string[];
+}
+
+interface Props {
+  issue: Issue;
+}
+
+const { issue } = Astro.props;
+---
+
+<article class="card" id={issue.slug}>
+  <h3>{issue.title}</h3>
+  <p>{issue.summary}</p>
+  {issue.sources.length > 0 && (
+    <p class="sources">
+      Sources: {issue.sources.map((src, i) => (
+        <>
+          {i > 0 && ' · '}
+          <a href={src} rel="noopener">{new URL(src).hostname.replace('www.', '')}</a>
+        </>
+      ))}
+    </p>
+  )}
+</article>

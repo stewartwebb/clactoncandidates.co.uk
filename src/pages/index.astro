@@ -1,0 +1,87 @@
+---
+import Base from '../layouts/Base.astro';
+import CandidateCard from '../components/CandidateCard.astro';
+import ResultsBar from '../components/ResultsBar.astro';
+import KeyDates from '../components/KeyDates.astro';
+import election from '../data/election.json';
+import candidates from '../data/candidates.json';
+
+const active = candidates.filter((c) => c.status !== 'withdrawn');
+const pollingDayFmt = election.pollingDay
+  ? new Date(election.pollingDay).toLocaleDateString('en-GB', {
+      weekday: 'long',
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    })
+  : null;
+---
+
+<Base
+  title="Clacton By-Election 2026 — Candidates, Parties & Issues"
+  description="Independent, non-partisan guide to the 2026 Clacton by-election: who the candidates are, what the parties stand for, the issues that matter, and how to vote."
+>
+  <p class="badge declared">By-election called</p>
+  <h1>The Clacton by-election, explained</h1>
+  <p class="lede">
+    Nigel Farage resigned as MP for Clacton on 7 July 2026, triggering a
+    by-election. This site is an independent, non-partisan guide to {pollingDayFmt ? `the vote on ${pollingDayFmt}` : 'the vote'}: the
+    candidates, the parties, the issues — and how to have your say.
+  </p>
+
+  <div class="notice">
+    <strong>{pollingDayFmt ? `Polling day is ${pollingDayFmt}.` : 'The date has not been set yet.'}</strong>
+    {' '}{election.statusNote}
+    {' '}<a href="/why-a-by-election/">Read why the by-election is happening →</a>
+  </div>
+
+  <h2>Candidates so far</h2>
+  <p class="muted">
+    {active.length === 1
+      ? 'One candidate has declared so far. More are expected in the coming days — this page is updated as each one is confirmed.'
+      : `${active.length} candidates have declared so far. The official list is confirmed when nominations close.`}
+  </p>
+  <div class="grid">
+    {active.map((c) => <CandidateCard candidate={c} compact />)}
+  </div>
+  <p><a href="/candidates/">All candidates and expected parties →</a></p>
+
+  <h2>What happened in 2024</h2>
+  <p class="muted">
+    Farage took the seat from the Conservatives with the largest swing recorded
+    at any UK general election.
+  </p>
+  <ResultsBar />
+
+  <h2>When is the vote?</h2>
+  <KeyDates />
+
+  <h2>Start here</h2>
+  <div class="grid">
+    <a class="card cta" href="/candidates/">
+      <h3>Candidates</h3>
+      <p class="muted">Who is standing, party by party, updated as they declare.</p>
+    </a>
+    <a class="card cta" href="/issues/">
+      <h3>The issues</h3>
+      <p class="muted">Deprivation, the NHS, immigration, the coast — what the campaign is about.</p>
+    </a>
+    <a class="card cta" href="/how-to-vote/">
+      <h3>How to vote</h3>
+      <p class="muted">Registering, photo ID, postal and proxy votes, polling day.</p>
+    </a>
+  </div>
+</Base>
+
+<style>
+  .cta {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: border-color 0.15s ease;
+  }
+
+  .cta:hover { border-color: var(--accent); }
+  .cta h3 { color: var(--accent); }
+  .cta p { margin-bottom: 0; }
+</style>

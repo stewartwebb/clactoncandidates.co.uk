@@ -1,0 +1,71 @@
+---
+import Base from '../layouts/Base.astro';
+import CandidateCard from '../components/CandidateCard.astro';
+import PartyCard from '../components/PartyCard.astro';
+import candidates from '../data/candidates.json';
+import parties from '../data/parties.json';
+
+const declared = candidates.filter((c) => c.status !== 'withdrawn');
+const withdrawn = candidates.filter((c) => c.status === 'withdrawn');
+
+const declaredPartySlugs = new Set(declared.map((c) => c.party));
+const awaiting = parties.filter(
+  (p) => p.expectedToStand && !declaredPartySlugs.has(p.slug)
+);
+---
+
+<Base
+  title="Candidates — Clacton By-Election 2026"
+  description="Every declared candidate in the 2026 Clacton by-election, with biographies, positions and sources — updated as parties confirm their candidates."
+>
+  <h1>The candidates</h1>
+  <p class="lede">
+    Everyone standing in the by-election, updated as each candidate is
+    confirmed. The definitive list is the Statement of Persons Nominated,
+    published by Tendring District Council after nominations close.
+  </p>
+
+  <div class="notice">
+    <strong>Nominations have not yet opened.</strong> Candidates listed as
+    "declared" have publicly announced they will stand; parties shown as
+    awaiting have not yet named a candidate. Check back — this page is updated
+    the day anything changes.
+  </div>
+
+  <h2>Declared candidates</h2>
+  <div class="grid">
+    {declared.map((c) => <CandidateCard candidate={c} />)}
+  </div>
+
+  {awaiting.length > 0 && (
+    <>
+      <h2>Awaiting a candidate</h2>
+      <p class="muted">
+        These parties stood in Clacton in 2024 or are expected to contest the
+        by-election, but have not yet announced who will stand.
+      </p>
+      <div class="grid">
+        {awaiting.map((p) => <PartyCard party={p} awaiting />)}
+      </div>
+    </>
+  )}
+
+  {withdrawn.length > 0 && (
+    <>
+      <h2>Withdrawn</h2>
+      <div class="grid">
+        {withdrawn.map((c) => <CandidateCard candidate={c} />)}
+      </div>
+    </>
+  )}
+
+  <h2>Could anyone else stand?</h2>
+  <p>
+    Yes. Anyone eligible can stand by submitting nomination papers signed by
+    ten local electors and a £500 deposit once the election notice is
+    published. High-profile by-elections typically attract a long ballot of
+    smaller parties and independents. Official candidate data will also appear
+    on <a href="https://whocanivotefor.co.uk/" rel="noopener">WhoCanIVoteFor</a> (Democracy
+    Club) once nominations close.
+  </p>
+</Base>

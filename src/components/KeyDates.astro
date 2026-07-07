@@ -1,0 +1,58 @@
+---
+import election from '../data/election.json';
+
+const dateFmt = (iso: string | null) =>
+  iso
+    ? new Date(iso).toLocaleDateString('en-GB', {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+      })
+    : null;
+---
+
+<div class="card">
+  <h3>Key dates</h3>
+  <dl>
+    {election.keyDates.map((kd) => (
+      <div class="kd-row">
+        <dt>{kd.label}</dt>
+        <dd>
+          {kd.date ? (
+            <strong>{dateFmt(kd.date)}</strong>
+          ) : (
+            <span class="muted">TBC{kd.note ? ` — ${kd.note.toLowerCase()}` : ''}</span>
+          )}
+        </dd>
+      </div>
+    ))}
+  </dl>
+  {!election.pollingDay && (
+    <p class="small muted">
+      Dates are set once the by-election writ is moved in the House of Commons.
+      This page will be updated the day the timetable is confirmed.
+    </p>
+  )}
+</div>
+
+<style>
+  dl { margin: 0.75rem 0 0; }
+
+  .kd-row {
+    display: grid;
+    grid-template-columns: minmax(12rem, 1fr) 1.5fr;
+    gap: 0.25rem 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .kd-row:last-of-type { border-bottom: none; }
+
+  dt { color: var(--ink-secondary); }
+  dd { margin: 0; }
+
+  @media (max-width: 30rem) {
+    .kd-row { grid-template-columns: 1fr; }
+  }
+</style>
