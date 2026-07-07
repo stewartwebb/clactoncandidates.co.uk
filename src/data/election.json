@@ -15,31 +15,31 @@
       "label": "Writ moved in the Commons",
       "date": null,
       "confirmed": false,
-      "note": "Expected after the Commons returns; sets the formal timetable"
+      "note": "expected after the Commons returns; sets the formal timetable"
     },
     {
       "label": "Deadline to register to vote",
       "date": null,
       "confirmed": false,
-      "note": "Usually 12 working days before polling day"
+      "note": "usually 12 working days before polling day"
     },
     {
       "label": "Deadline for new postal vote applications",
       "date": null,
       "confirmed": false,
-      "note": "Usually 11 working days before polling day"
+      "note": "usually 11 working days before polling day"
     },
     {
       "label": "Statement of Persons Nominated published",
       "date": null,
       "confirmed": false,
-      "note": "The official candidate list, published after nominations close"
+      "note": "the official candidate list, published after nominations close"
     },
     {
       "label": "Polling day",
       "date": null,
       "confirmed": false,
-      "note": "Polls open 7am–10pm"
+      "note": "polls open 7am–10pm"
     }
   ],
   "result2024": {

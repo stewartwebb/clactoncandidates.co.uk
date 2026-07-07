@@ -22,7 +22,7 @@ const dateFmt = (iso: string | null) =>
           {kd.date ? (
             <strong>{dateFmt(kd.date)}</strong>
           ) : (
-            <span class="muted">TBC{kd.note ? ` — ${kd.note.toLowerCase()}` : ''}</span>
+            <span class="muted">TBC{kd.note ? ` — ${kd.note}` : ''}</span>
           )}
         </dd>
       </div>
