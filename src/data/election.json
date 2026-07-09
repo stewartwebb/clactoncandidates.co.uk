@@ -2,9 +2,9 @@
   "constituency": "Clacton",
   "electionName": "2026 Clacton by-election",
   "status": "called",
-  "statusNote": "Nigel Farage resigned as MP on 7 July 2026. The by-election date will be set once the writ is moved in the House of Commons.",
+  "statusNote": "Nigel Farage resigned as MP on 7 July 2026 and the Commons accepted his resignation on 8 July. Reform UK has said it will move the writ for the by-election to be held on Thursday 6 August 2026. The full nomination and postal-vote timetable is confirmed once the writ is moved.",
   "writMoved": false,
-  "pollingDay": null,
+  "pollingDay": "2026-08-06",
   "keyDates": [
     {
       "label": "Farage resigns as MP",
@@ -12,22 +12,27 @@
       "confirmed": true
     },
     {
+      "label": "Commons accepts resignation",
+      "date": "2026-07-08",
+      "confirmed": true
+    },
+    {
       "label": "Writ moved in the Commons",
       "date": null,
       "confirmed": false,
-      "note": "expected after the Commons returns; sets the formal timetable"
+      "note": "Reform UK has said it will move the writ for a poll on 6 August; this sets the formal timetable"
     },
     {
       "label": "Deadline to register to vote",
       "date": null,
       "confirmed": false,
-      "note": "usually 12 working days before polling day"
+      "note": "usually 12 working days before polling day — expected in mid-to-late July"
     },
     {
       "label": "Deadline for new postal vote applications",
       "date": null,
       "confirmed": false,
-      "note": "usually 11 working days before polling day"
+      "note": "usually 11 working days before polling day — expected in mid-to-late July"
     },
     {
       "label": "Statement of Persons Nominated published",
@@ -37,9 +42,9 @@
     },
     {
       "label": "Polling day",
-      "date": null,
-      "confirmed": false,
-      "note": "polls open 7am–10pm"
+      "date": "2026-08-06",
+      "confirmed": true,
+      "note": "polls open 7am–10pm; the date announced by Reform UK, formally fixed when the writ is moved"
     }
   ],
   "result2024": {

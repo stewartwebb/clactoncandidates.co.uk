@@ -7,7 +7,47 @@
     "leader": "Nigel Farage",
     "website": "https://www.reformparty.uk",
     "expectedToStand": true,
-    "summary": "Reform UK holds the seat, won by Nigel Farage in 2024 with 46.2% of the vote. The party campaigns on cutting immigration, leaving the European Convention on Human Rights, lower taxes, and reforming public services. Farage has confirmed he will stand again in the by-election."
+    "summary": "Reform UK holds the seat, won by Nigel Farage in 2024 with 46.2% of the vote. The party campaigns on cutting immigration, leaving the European Convention on Human Rights, lower taxes, and reforming public services. Farage resigned the seat on 7 July 2026 and is standing again in the by-election."
+  },
+  {
+    "slug": "count-binface",
+    "name": "Count Binface",
+    "shortName": "Count Binface",
+    "color": "#5b6770",
+    "leader": null,
+    "website": "https://www.countbinface.com",
+    "expectedToStand": true,
+    "summary": "A satirical novelty candidacy, the alter ego of comedian Jon Harvey, known for standing against senior politicians in their own seats. With the main opposition parties standing aside, Count Binface has been widely described as the highest-profile challenger to Nigel Farage on the ballot."
+  },
+  {
+    "slug": "reclaim",
+    "name": "Reclaim Party",
+    "shortName": "Reclaim",
+    "color": "#123c69",
+    "leader": "Laurence Fox",
+    "website": null,
+    "expectedToStand": true,
+    "summary": "A small party founded by actor Laurence Fox in 2020, campaigning on free-speech and anti-\"woke\" themes. Fox is standing as the party's candidate in Clacton."
+  },
+  {
+    "slug": "british-democrats",
+    "name": "British Democrats",
+    "shortName": "British Democrats",
+    "color": "#1b3a6b",
+    "leader": null,
+    "website": null,
+    "expectedToStand": true,
+    "summary": "A small nationalist party. It has named Kai Stephens as its candidate for the by-election."
+  },
+  {
+    "slug": "forward",
+    "name": "Forward Party",
+    "shortName": "Forward Party",
+    "color": "#00857c",
+    "leader": null,
+    "website": null,
+    "expectedToStand": true,
+    "summary": "A small party fielding Adham Alkhatip as its candidate in the by-election."
   },
   {
     "slug": "conservative",
@@ -16,8 +56,9 @@
     "color": "#0087dc",
     "leader": "Kemi Badenoch",
     "website": "https://www.conservatives.com",
-    "expectedToStand": true,
-    "summary": "The Conservatives held Clacton from 2010 to 2024 (with a brief UKIP interlude in 2014–15) and finished second in 2024 with 27.9%. The party has reportedly been preparing for a potential by-election in the seat since the standards investigation into Farage was launched in May 2026. No candidate has been announced yet."
+    "expectedToStand": false,
+    "notStanding": true,
+    "summary": "The Conservatives held Clacton from 2010 to 2024 (with a brief UKIP interlude in 2014–15) and finished second in 2024 with 27.9%. Leader Kemi Badenoch has said the party will not stand in what she called \"Farage's fake by-election\", while indicating the Conservatives would contest any subsequent by-election in the seat."
   },
   {
     "slug": "labour",
@@ -26,8 +67,9 @@
     "color": "#e4003b",
     "leader": "Keir Starmer",
     "website": "https://labour.org.uk",
-    "expectedToStand": true,
-    "summary": "Labour, the party of government nationally, finished third in Clacton in 2024 with 16.2% of the vote. No candidate has been announced yet."
+    "expectedToStand": false,
+    "notStanding": true,
+    "summary": "Labour, the party of government nationally, finished third in Clacton in 2024 with 16.2% of the vote. It has said it will not contest the by-election, with senior figures calling the circumstances of Farage's resignation \"pathetic\"."
   },
   {
     "slug": "liberal-democrats",
@@ -36,8 +78,9 @@
     "color": "#faa61a",
     "leader": "Ed Davey",
     "website": "https://www.libdems.org.uk",
-    "expectedToStand": true,
-    "summary": "The Liberal Democrats took 4.4% in Clacton in 2024. The party led calls for an expanded standards inquiry into the financial support received by Nigel Farage. No candidate has been announced yet."
+    "expectedToStand": false,
+    "notStanding": true,
+    "summary": "The Liberal Democrats took 4.4% in Clacton in 2024 and led calls for an expanded standards inquiry into the financial support received by Nigel Farage. Leader Ed Davey has said the party will not stand and has urged others to do the same, arguing the resignation should not be rewarded with a contest."
   },
   {
     "slug": "green",
@@ -46,8 +89,9 @@
     "color": "#02a95b",
     "leader": "Zack Polanski",
     "website": "https://www.greenparty.org.uk",
-    "expectedToStand": true,
-    "summary": "The Green Party polled 4.2% in Clacton in 2024. No candidate has been announced yet."
+    "expectedToStand": false,
+    "notStanding": true,
+    "summary": "The Green Party polled 4.2% in Clacton in 2024. It has said it will not contest the by-election, describing it as designed to \"serve Nigel Farage's personal political ambitions\"."
   },
   {
     "slug": "independent",
@@ -57,6 +101,6 @@
     "leader": null,
     "website": null,
     "expectedToStand": false,
-    "summary": "Independent candidates and smaller parties frequently stand in high-profile by-elections. Any independents who declare will be listed here."
+    "summary": "Independent candidates and smaller parties frequently stand in high-profile by-elections. Ollie Granger and Luke Worley have declared as independents, and other parties including the Monster Raving Loony Party and Rejoin EU have said they intend to field candidates. Any further independents who declare will be listed here."
   }
 ]

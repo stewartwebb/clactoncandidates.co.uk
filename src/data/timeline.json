@@ -26,10 +26,22 @@
     "confirmed": true
   },
   {
+    "date": "2026-07-08",
+    "title": "Major parties decline to stand",
+    "detail": "Labour, the Conservatives, the Liberal Democrats and the Greens all say they will not contest the by-election, variously describing it as a stunt, a \"fake by-election\" and a distraction from the standards case. The Conservatives indicate they would fight any subsequent by-election in the seat.",
+    "confirmed": true
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Challengers declare",
+    "detail": "With the main opposition parties standing aside, a field of smaller-party and independent candidates comes forward — among them the satirical Count Binface, Reclaim's Laurence Fox, the British Democrats' Kai Stephens, the Forward Party's Adham Alkhatip and independents Ollie Granger and Luke Worley. The Monster Raving Loony Party and Rejoin EU also say they intend to field candidates.",
+    "confirmed": true
+  },
+  {
     "date": null,
-    "dateDisplay": "Date TBC",
+    "dateDisplay": "Expected mid-July 2026",
     "title": "Writ moved",
-    "detail": "The formal by-election process starts when the House of Commons moves the writ. By convention this is done by the party that held the seat. The writ sets the timetable: nominations, postal vote deadlines and polling day.",
+    "detail": "The formal by-election process starts when the House of Commons moves the writ. By convention this is done by the party that held the seat. Reform UK has said it will move the writ for a poll on 6 August, fixing the timetable for nominations, postal vote deadlines and polling day.",
     "confirmed": false
   },
   {
@@ -40,10 +52,9 @@
     "confirmed": false
   },
   {
-    "date": null,
-    "dateDisplay": "Date TBC",
+    "date": "2026-08-06",
     "title": "Polling day",
-    "detail": "Polls open 7am to 10pm. Remember photo ID.",
+    "detail": "The date announced by Reform UK for the by-election. Polls open 7am to 10pm. Remember photo ID.",
     "confirmed": false
   }
 ]

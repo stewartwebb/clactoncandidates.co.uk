@@ -17,5 +17,101 @@
       "https://www.newstatesman.com/politics/2026/07/will-nigel-farage-be-forced-to-fight-a-by-election",
       "https://en.wikipedia.org/wiki/2026_Clacton_by-election"
     ]
+  },
+  {
+    "slug": "count-binface",
+    "name": "Count Binface",
+    "party": "count-binface",
+    "status": "declared",
+    "declaredDate": "2026-07-08",
+    "photo": null,
+    "bio": "A satirical \"intergalactic\" novelty candidate, the alter ego of comedian Jon Harvey. Count Binface has previously stood against senior politicians in their own seats, including Boris Johnson in Uxbridge, Rishi Sunak in Richmond and Keir Starmer in Holborn & St Pancras, campaigning on a deliberately absurd manifesto.",
+    "whyStanding": "With the main opposition parties declining to field candidates against Farage, Count Binface announced he would stand and was quickly framed in coverage and betting markets as the highest-profile challenger on the ballot. He has questioned whether rivals are \"running scared\".",
+    "keyPositions": [],
+    "links": {
+      "website": "https://www.countbinface.com",
+      "wikipedia": "https://en.wikipedia.org/wiki/Count_Binface"
+    },
+    "sources": [
+      "https://www.itv.com/news/2026-07-08/count-binface-who-is-the-man-behind-the-bin",
+      "https://www.rte.ie/news/uk/2026/0708/1582378-uk-binface-byelection/"
+    ]
+  },
+  {
+    "slug": "laurence-fox",
+    "name": "Laurence Fox",
+    "party": "reclaim",
+    "status": "declared",
+    "declaredDate": "2026-07-08",
+    "photo": null,
+    "bio": "Actor and founder and leader of the Reclaim Party, which he set up in 2020. He stood as a candidate for Mayor of London in 2021.",
+    "whyStanding": "Fox has announced he will contest the by-election for the Reclaim Party.",
+    "keyPositions": [],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Laurence_Fox"
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/2026_Clacton_by-election"
+    ]
+  },
+  {
+    "slug": "kai-stephens",
+    "name": "Kai Stephens",
+    "party": "british-democrats",
+    "status": "declared",
+    "declaredDate": "2026-07-08",
+    "photo": null,
+    "bio": "The British Democrats' candidate for the by-election. The British Democrats are a small nationalist party.",
+    "whyStanding": "Stephens has been announced as the British Democrats' candidate for Clacton.",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://en.wikipedia.org/wiki/2026_Clacton_by-election"
+    ]
+  },
+  {
+    "slug": "adham-alkhatip",
+    "name": "Adham Alkhatip",
+    "party": "forward",
+    "status": "declared",
+    "declaredDate": "2026-07-08",
+    "photo": null,
+    "bio": "The Forward Party's candidate for the by-election.",
+    "whyStanding": "Alkhatip has been announced as the Forward Party's candidate for Clacton.",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://en.wikipedia.org/wiki/2026_Clacton_by-election"
+    ]
+  },
+  {
+    "slug": "ollie-granger",
+    "name": "Ollie Granger",
+    "party": "independent",
+    "status": "declared",
+    "declaredDate": "2026-07-08",
+    "photo": null,
+    "bio": "An independent candidate standing in the by-election.",
+    "whyStanding": "Granger has announced he will stand as an independent.",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://en.wikipedia.org/wiki/2026_Clacton_by-election"
+    ]
+  },
+  {
+    "slug": "luke-worley",
+    "name": "Luke Worley",
+    "party": "independent",
+    "status": "declared",
+    "declaredDate": "2026-07-08",
+    "photo": null,
+    "bio": "An independent candidate standing in the by-election.",
+    "whyStanding": "Worley has announced he will stand as an independent.",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://en.wikipedia.org/wiki/2026_Clacton_by-election"
+    ]
   }
 ]

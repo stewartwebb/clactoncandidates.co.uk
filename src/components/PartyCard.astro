@@ -9,6 +9,7 @@ interface Party {
   leader: string | null;
   website: string | null;
   expectedToStand: boolean;
+  notStanding?: boolean;
   summary: string;
 }
 
@@ -16,9 +17,11 @@ interface Props {
   party: Party;
   /** Render as an "awaiting declaration" placeholder on the candidates page */
   awaiting?: boolean;
+  /** Mark a party that has confirmed it will not contest the by-election */
+  notStanding?: boolean;
 }
 
-const { party, awaiting = false } = Astro.props;
+const { party, awaiting = false, notStanding = false } = Astro.props;
 const fmt = new Intl.NumberFormat('en-GB');
 const result2024 = election.result2024.results.find((r) => r.party === party.slug);
 ---
@@ -30,6 +33,7 @@ const result2024 = election.result2024.results.find((r) => r.party === party.slu
       {party.shortName}
     </h3>
     {awaiting && <span class="badge">No candidate yet</span>}
+    {notStanding && <span class="badge">Not standing</span>}
   </header>
 
   {awaiting ? (
