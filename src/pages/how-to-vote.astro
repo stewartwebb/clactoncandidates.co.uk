@@ -1,73 +1,96 @@
 ---
 import Base from '../layouts/Base.astro';
 import KeyDates from '../components/KeyDates.astro';
+import election from '../data/election.json';
 ---
 
 <Base
   title="How to Vote — Clacton By-Election 2026"
-  description="How to vote in the 2026 Clacton by-election: registering to vote, photo ID requirements, postal and proxy votes, and what happens on polling day."
+  description="How to vote in the Clacton by-election on 13 August 2026: deadlines to register and to apply for a postal or proxy vote, photo ID rules, and what happens on polling day."
 >
   <h1>How to vote</h1>
   <p class="lede">
-    You can vote in the by-election if you live in the Clacton constituency,
-    are registered to vote, are 18 or over on polling day, and are a British,
-    Irish or qualifying Commonwealth citizen.
+    Polling day is Thursday 13 August 2026, with {election.pollingStations} polling
+    stations open from 7am to 10pm across the constituency. You can vote if you
+    live in the Clacton constituency, are registered to vote, are 18 or over on
+    polling day, and are a British, Irish or qualifying Commonwealth citizen.
   </p>
 
   <KeyDates />
 
-  <h2>1. Register to vote</h2>
+  <h2>1. Register to vote — by midnight on 28 July</h2>
   <p>
     Registering takes about five minutes
     at <a href="https://www.gov.uk/register-to-vote" rel="noopener">gov.uk/register-to-vote</a>.
     You need your National Insurance number. If you are already registered
     (for example, you voted in the May 2026 Essex county elections) you do not
-    need to register again. The deadline is normally twelve working days
-    before polling day.
+    need to register again. The deadline to be on the register for this
+    by-election is <strong>midnight on Tuesday 28 July 2026</strong>.
   </p>
 
   <h2>2. Bring photo ID</h2>
   <p>
     You must show photo ID to vote in person. Accepted forms include a
     passport, driving licence (including provisional), blue badge, older
-    person's bus pass, and others on
+    person's bus pass, PASS card and others on
     the <a href="https://www.electoralcommission.org.uk/voting-and-elections/voter-id" rel="noopener">Electoral Commission's full list</a>.
-    Expired ID is accepted if the photo still looks like you. No ID? Apply for
-    a free <a href="https://www.gov.uk/apply-for-photo-id-voter-authority-certificate" rel="noopener">Voter
-    Authority Certificate</a> before the deadline (normally six working days
-    before polling day).
+    Expired ID is accepted if the photo still looks like you. If you have none
+    of the accepted documents, apply for a
+    free <a href="https://www.gov.uk/apply-for-photo-id-voter-authority-certificate" rel="noopener">Voter
+    Authority Certificate</a> by <strong>5pm on Wednesday 5 August 2026</strong>.
+    Photo ID is not needed for postal voting.
   </p>
 
   <h2>3. Choose how to vote</h2>
   <ul>
     <li>
       <strong>In person</strong> — polling stations are open 7am to 10pm on
-      polling day. Your polling station is printed on the poll card posted to
-      you; you do not need the poll card itself to vote.
+      Thursday 13 August. Your polling station is printed on the poll card
+      posted to you; you do not need the poll card itself to vote, but you do
+      need photo ID. If you are in the queue at 10pm you will still be able to
+      vote.
     </li>
     <li>
       <strong>By post</strong> — apply
       at <a href="https://www.gov.uk/apply-postal-vote" rel="noopener">gov.uk/apply-postal-vote</a>.
-      Applications normally close eleven working days before polling day.
+      New applications must be received by <strong>5pm on Wednesday 29 July 2026</strong>.
+      Completed postal votes must reach the returning officer by 10pm on
+      polling day; you can also hand them in at a polling station in the
+      constituency or at the council offices, with a completed form, and there
+      are limits on how many other people's postal votes you may hand in.
     </li>
     <li>
       <strong>By proxy</strong> — someone you trust votes on your behalf.
-      Apply at <a href="https://www.gov.uk/apply-proxy-vote" rel="noopener">gov.uk/apply-proxy-vote</a>,
-      normally by six working days before polling day.
+      Apply at <a href="https://www.gov.uk/apply-proxy-vote" rel="noopener">gov.uk/apply-proxy-vote</a> by
+      <strong>5pm on Wednesday 5 August 2026</strong>. Your proxy must bring
+      their own photo ID. If an emergency after that deadline — such as a
+      medical incident — stops you voting in person, you can apply for an
+      emergency proxy up to 5pm on polling day.
     </li>
   </ul>
+
+  <h2>4. Marking a long ballot paper</h2>
+  <p>
+    With a record {election.candidateCount} candidates standing, the ballot
+    paper is unusually long, and candidates are listed alphabetically by
+    surname. Mark <strong>one</strong> cross, in the box next to the single
+    candidate you are voting for. Marking more than one box makes the paper
+    void, and any writing that identifies you can also spoil it. If you make a
+    mistake before putting the paper in the box, ask staff for a replacement.
+  </p>
 
   <h2>Questions about your registration?</h2>
   <p>
     Electoral services for the constituency are run
-    by <a href="https://www.tendringdc.gov.uk/" rel="noopener">Tendring District Council</a> —
+    by <a href={election.councilElectionsUrl} rel="noopener">Tendring District Council</a> —
     they can confirm whether you are registered, where your polling station
-    is, and the status of a postal or proxy application.
+    is, and the status of a postal or proxy application. The acting returning
+    officer for the by-election is {election.returningOfficer}.
   </p>
 
   <div class="notice">
-    <strong>Exact deadlines will be published here</strong> as soon as the
-    by-election date is confirmed. The working-day rules above are the
-    standard ones for UK parliamentary by-elections.
+    <strong>The count starts once polls close at 10pm on 13 August.</strong>
+    {' '}With almost 80,000 electors eligible and {election.candidateCount} candidates
+    to count, the declaration is expected in the early hours of Friday 14 August.
   </div>
 </Base>

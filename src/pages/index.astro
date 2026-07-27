@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import CandidateCard from '../components/CandidateCard.astro';
+import BallotList from '../components/BallotList.astro';
 import ResultsBar from '../components/ResultsBar.astro';
 import KeyDates from '../components/KeyDates.astro';
 import election from '../data/election.json';
@@ -19,9 +19,9 @@ const pollingDayFmt = election.pollingDay
 
 <Base
   title="Clacton By-Election 2026 — Candidates, Parties & Issues"
-  description="Independent, non-partisan guide to the 2026 Clacton by-election: who the candidates are, what the parties stand for, the issues that matter, and how to vote."
+  description="Independent, non-partisan guide to the 2026 Clacton by-election on 13 August: all 34 candidates on the ballot, what the parties stand for, the issues, and how to vote."
 >
-  <p class="badge declared">By-election called</p>
+  <p class="badge declared">Polling day: Thursday 13 August</p>
   <h1>The Clacton by-election, explained</h1>
   <p class="lede">
     Nigel Farage resigned as MP for Clacton on 7 July 2026, triggering a
@@ -30,21 +30,19 @@ const pollingDayFmt = election.pollingDay
   </p>
 
   <div class="notice">
-    <strong>{pollingDayFmt ? `Polling day is ${pollingDayFmt}.` : 'The date has not been set yet.'}</strong>
+    <strong>Nominations have closed and the ballot paper is final.</strong>
     {' '}{election.statusNote}
     {' '}<a href="/why-a-by-election/">Read why the by-election is happening →</a>
   </div>
 
-  <h2>Candidates so far</h2>
+  <h2>Who is on the ballot paper</h2>
   <p class="muted">
-    {active.length === 1
-      ? 'One candidate has declared so far. More are expected in the coming days — this page is updated as each one is confirmed.'
-      : `${active.length} candidates have declared so far. The official list is confirmed when nominations close.`}
+    All {active.length} candidates, in the order they appear on the ballot paper.
+    Tap a name for their full entry. This list matches the Statement of Persons
+    Nominated published by Tendring District Council on 17 July 2026.
   </p>
-  <div class="grid">
-    {active.map((c) => <CandidateCard candidate={c} compact />)}
-  </div>
-  <p><a href="/candidates/">All candidates — and which parties are standing aside →</a></p>
+  <BallotList linkToCandidates />
+  <p><a href="/candidates/">Full candidate profiles — and which parties are standing aside →</a></p>
 
   <h2>What happened in 2024</h2>
   <p class="muted">
@@ -60,7 +58,7 @@ const pollingDayFmt = election.pollingDay
   <div class="grid">
     <a class="card cta" href="/candidates/">
       <h3>Candidates</h3>
-      <p class="muted">Who is standing, party by party, updated as they declare.</p>
+      <p class="muted">All {active.length} on the ballot — a record for a UK by-election.</p>
     </a>
     <a class="card cta" href="/issues/">
       <h3>The issues</h3>

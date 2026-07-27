@@ -1,50 +1,72 @@
 {
   "constituency": "Clacton",
   "electionName": "2026 Clacton by-election",
-  "status": "called",
-  "statusNote": "Nigel Farage resigned as MP on 7 July 2026 and the Commons accepted his resignation on 8 July. Reform UK has said it will move the writ for the by-election to be held on Thursday 6 August 2026. The full nomination and postal-vote timetable is confirmed once the writ is moved.",
-  "writMoved": false,
-  "pollingDay": "2026-08-06",
+  "status": "nominations-closed",
+  "statusNote": "Nominations closed on Friday 17 July 2026. A record 34 candidates are on the ballot paper — more than at any previous UK parliamentary by-election. Polling day is Thursday 13 August 2026, with polls open from 7am to 10pm.",
+  "writMoved": true,
+  "writMovedDate": "2026-07-09",
+  "nominationsClosedDate": "2026-07-17",
+  "pollingDay": "2026-08-13",
+  "candidateCount": 34,
+  "previousRecord": {
+    "count": 26,
+    "contest": "2008 Haltemprice and Howden by-election"
+  },
+  "electorate": 80000,
+  "electorateNote": "almost 80,000 electors are eligible to vote",
+  "pollingStations": 51,
+  "returningOfficer": "Ian Davidson, Acting Returning Officer",
+  "returningAuthority": "Tendring District Council",
+  "sopnUrl": "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf",
+  "councilElectionsUrl": "https://www.tendringdc.gov.uk/elections",
   "keyDates": [
     {
-      "label": "Farage resigns as MP",
-      "date": "2026-07-07",
-      "confirmed": true
-    },
-    {
-      "label": "Commons accepts resignation",
-      "date": "2026-07-08",
-      "confirmed": true
-    },
-    {
       "label": "Writ moved in the Commons",
-      "date": null,
-      "confirmed": false,
-      "note": "Reform UK has said it will move the writ for a poll on 6 August; this sets the formal timetable"
+      "date": "2026-07-09",
+      "confirmed": true,
+      "note": "the formal start of the by-election timetable"
+    },
+    {
+      "label": "Nominations closed",
+      "date": "2026-07-17",
+      "confirmed": true,
+      "note": "the official candidate list (a record 34 names) was published the same day"
     },
     {
       "label": "Deadline to register to vote",
-      "date": null,
-      "confirmed": false,
-      "note": "usually 12 working days before polling day — expected in mid-to-late July"
+      "date": "2026-07-28",
+      "confirmed": true,
+      "note": "midnight"
     },
     {
       "label": "Deadline for new postal vote applications",
-      "date": null,
-      "confirmed": false,
-      "note": "usually 11 working days before polling day — expected in mid-to-late July"
+      "date": "2026-07-29",
+      "confirmed": true,
+      "note": "5pm"
     },
     {
-      "label": "Statement of Persons Nominated published",
-      "date": null,
-      "confirmed": false,
-      "note": "the official candidate list, published after nominations close"
+      "label": "Deadline for proxy vote applications",
+      "date": "2026-08-05",
+      "confirmed": true,
+      "note": "5pm"
+    },
+    {
+      "label": "Deadline for a free Voter Authority Certificate",
+      "date": "2026-08-05",
+      "confirmed": true,
+      "note": "5pm, and only needed if you have no accepted photo ID"
     },
     {
       "label": "Polling day",
-      "date": "2026-08-06",
+      "date": "2026-08-13",
       "confirmed": true,
-      "note": "polls open 7am–10pm; the date announced by Reform UK, formally fixed when the writ is moved"
+      "note": "polls open 7am–10pm; take photo ID"
+    },
+    {
+      "label": "Result declared",
+      "date": "2026-08-14",
+      "confirmed": false,
+      "note": "the count starts after polls close; the declaration is expected in the early hours"
     }
   ],
   "result2024": {

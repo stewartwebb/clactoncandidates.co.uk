@@ -27,34 +27,51 @@
   },
   {
     "date": "2026-07-08",
-    "title": "Major parties decline to stand",
-    "detail": "Labour, the Conservatives, the Liberal Democrats and the Greens all say they will not contest the by-election, variously describing it as a stunt, a \"fake by-election\" and a distraction from the standards case. The Conservatives indicate they would fight any subsequent by-election in the seat.",
+    "title": "Resignation takes effect",
+    "detail": "Chancellor Rachel Reeves appoints Farage Steward and Bailiff of the Manor of Northstead — the ceremonial office used to vacate a Commons seat, as MPs cannot simply resign. Clacton is formally without an MP from this point until the by-election.",
     "confirmed": true
   },
   {
     "date": "2026-07-08",
-    "title": "Challengers declare",
-    "detail": "With the main opposition parties standing aside, a field of smaller-party and independent candidates comes forward — among them the satirical Count Binface, Reclaim's Laurence Fox, the British Democrats' Kai Stephens, the Forward Party's Adham Alkhatip and independents Ollie Granger and Luke Worley. The Monster Raving Loony Party and Rejoin EU also say they intend to field candidates.",
+    "title": "Major parties decline to stand",
+    "detail": "Labour, the Conservatives, the Liberal Democrats, the Greens and Rupert Lowe's Restore Britain all say they will not contest the by-election, variously describing it as a stunt, a \"fake by-election\" and a media circus. The Conservatives indicate they would fight any subsequent by-election in the seat.",
     "confirmed": true
   },
   {
-    "date": null,
-    "dateDisplay": "Expected mid-July 2026",
-    "title": "Writ moved",
-    "detail": "The formal by-election process starts when the House of Commons moves the writ. By convention this is done by the party that held the seat. Reform UK has said it will move the writ for a poll on 6 August, fixing the timetable for nominations, postal vote deadlines and polling day.",
-    "confirmed": false
+    "date": "2026-07-09",
+    "title": "Writ moved — polling day set for 13 August",
+    "detail": "The House of Commons moves the writ, formally starting the by-election and fixing the timetable for nominations, absent-vote deadlines and polling day. Reform UK offers to meet the estimated £200,000 cost of running the contest.",
+    "confirmed": true
   },
   {
-    "date": null,
-    "dateDisplay": "Date TBC",
-    "title": "Nominations close — official candidate list published",
-    "detail": "The Statement of Persons Nominated (SOPN) is the definitive list of candidates on the ballot paper. This site will be updated the day it is published.",
-    "confirmed": false
+    "date": "2026-07-15",
+    "dateDisplay": "9–17 July 2026",
+    "title": "A crowded field forms — and some drop out",
+    "detail": "With the main opposition parties standing aside, dozens of smaller-party and independent candidates come forward, among them the satirical Count Binface, Reclaim's Laurence Fox, the Official Monster Raving Loony Party and Rejoin EU. Several who announced early do not go on to file nomination papers, including Piers Corbyn, Protect the Wild's Rob Pownall and independents Ollie Granger and Luke Worley, who withdrew saying voters wanted a straight two-horse race.",
+    "confirmed": true
   },
   {
-    "date": "2026-08-06",
+    "date": "2026-07-17",
+    "title": "Nominations close — a record 34 candidates",
+    "detail": "Tendring District Council publishes the Statement of Persons Nominated: 34 candidates, the most at any UK parliamentary by-election, beating the 26 who stood at Haltemprice and Howden in 2008. Nineteen are independents and three are Monster Raving Loonies. This is the definitive ballot paper.",
+    "confirmed": true
+  },
+  {
+    "date": "2026-07-28",
+    "title": "Deadline to register to vote",
+    "detail": "Midnight on 28 July is the last moment to get on the electoral register in time to vote in this by-election. Applications for a postal vote close at 5pm the following day, 29 July.",
+    "confirmed": true
+  },
+  {
+    "date": "2026-08-05",
+    "title": "Proxy vote and voter ID deadlines",
+    "detail": "5pm on 5 August is the deadline both to apply for a proxy vote and to apply for a free Voter Authority Certificate for anyone without an accepted form of photo ID.",
+    "confirmed": true
+  },
+  {
+    "date": "2026-08-13",
     "title": "Polling day",
-    "detail": "The date announced by Reform UK for the by-election. Polls open 7am to 10pm. Remember photo ID.",
+    "detail": "Voting takes place at 51 polling stations across the constituency, open 7am to 10pm. Almost 80,000 electors are eligible. Photo ID is required to vote in person. The count follows immediately, with the result expected in the early hours of 14 August.",
     "confirmed": false
   }
 ]

@@ -1,13 +1,202 @@
 [
   {
+    "slug": "joseph-77",
+    "ballotName": "77, Joseph",
+    "name": "Joseph 77",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Southend East & Rochford constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "adham-alkhatip",
+    "ballotName": "ALKHATIP, Adham",
+    "name": "Adham Alkhatip",
+    "party": "forward",
+    "description": "The Forward Party",
+    "homeArea": "in the Birmingham Edgbaston constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "The Forward Party's candidate for the by-election.",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://en.wikipedia.org/wiki/2026_Clacton_by-election"
+    ]
+  },
+  {
+    "slug": "count-binface",
+    "ballotName": "BINFACE, Count",
+    "name": "Count Binface",
+    "party": "count-binface",
+    "description": "Count Binface Party",
+    "homeArea": "in the Sussex Weald constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "A satirical \"intergalactic\" novelty candidate, the alter ego of comedian Jon Harvey. Count Binface has previously stood against senior politicians in their own seats, including Boris Johnson in Uxbridge, Rishi Sunak in Richmond and Keir Starmer in Holborn & St Pancras, campaigning on a deliberately absurd manifesto.",
+    "whyStanding": "With the main opposition parties declining to field candidates against Nigel Farage, Count Binface announced he would stand and has been widely described in coverage as the highest-profile challenger on the ballot. He has called himself a \"unity candidate\" while conceding he would \"probably not\" win, saying the campaign is a celebration of British democracy.",
+    "keyPositions": [],
+    "links": {
+      "website": "https://www.countbinface.com",
+      "wikipedia": "https://en.wikipedia.org/wiki/Count_Binface"
+    },
+    "sources": [
+      "https://www.itv.com/news/2026-07-08/count-binface-who-is-the-man-behind-the-bin",
+      "https://en.wikipedia.org/wiki/2026_Clacton_by-election"
+    ]
+  },
+  {
+    "slug": "nick-the-incredible-flying-brick",
+    "ballotName": "BRICK, Nick The Incredible Flying",
+    "name": "Nick The Incredible Flying Brick",
+    "party": "monster-raving-loony",
+    "description": "The Official Monster Raving Loony Party",
+    "homeArea": "in Kirk Ireton, Derbyshire",
+    "status": "nominated",
+    "photo": null,
+    "bio": "One of three Official Monster Raving Loony Party candidates on the Clacton ballot. The party has fielded joke candidates at British elections since 1983.",
+    "keyPositions": [],
+    "links": {
+      "website": "https://www.loonyparty.com"
+    },
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "tony-cane",
+    "ballotName": "CANE, Tony",
+    "name": "Tony Cane",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Mid Norfolk constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "woke-trump-carrzee",
+    "ballotName": "CARRZEE, Woke Trump",
+    "name": "Woke Trump Carrzee",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Stratford and Bow constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "william-clouston",
+    "ballotName": "CLOUSTON, William Stuart James",
+    "name": "William Clouston",
+    "party": "sdp",
+    "description": "Social Democratic Party",
+    "homeArea": "in the Hexham constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "Leader of the Social Democratic Party, which he has led since 2018.",
+    "whyStanding": "Clouston announced his candidacy on 17 July 2026, the day nominations closed.",
+    "keyPositions": [],
+    "links": {
+      "website": "https://sdp.org.uk",
+      "wikipedia": "https://en.wikipedia.org/wiki/William_Clouston"
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/2026_Clacton_by-election"
+    ]
+  },
+  {
+    "slug": "rees-cowne",
+    "ballotName": "COWNE, Rees",
+    "name": "Rees Cowne",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Kensington and Bayswater constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "glenn-cummings",
+    "ballotName": "CUMMINGS, Glenn Charles",
+    "name": "Glenn Cummings",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Stone, Great Wyrley and Penkridge constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "martin-davies",
+    "ballotName": "DAVIES, Martin",
+    "name": "Martin Davies",
+    "party": "freedom-alliance",
+    "description": "Freedom Alliance - Real People, Real Alternative!",
+    "homeArea": "in the Harrogate and Knaresborough constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "The Freedom Alliance's candidate for the by-election.",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "andy-erlam",
+    "ballotName": "Erlam, Andy",
+    "name": "Andy Erlam",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in Brandon, Suffolk",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
     "slug": "nigel-farage",
+    "ballotName": "FARAGE, Nigel",
     "name": "Nigel Farage",
     "party": "reform-uk",
-    "status": "declared",
-    "declaredDate": "2026-07-07",
+    "description": "Reform UK",
+    "homeArea": "in the Clacton constituency",
+    "status": "nominated",
     "photo": null,
     "bio": "Leader of Reform UK and MP for Clacton from July 2024 until his resignation on 7 July 2026. Previously leader of UKIP and the Brexit Party, and a Member of the European Parliament for South East England from 1999 to 2020. He won Clacton in 2024 with 46.2% of the vote, on the largest swing recorded at any UK general election.",
-    "whyStanding": "Farage resigned his seat while under investigation by the Parliamentary Commissioner for Standards over undeclared financial support, saying he had \"done no wrongdoing and followed the rules\" and describing the investigations as an \"establishment hit job\". He is standing again to seek a fresh mandate from Clacton voters.",
+    "whyStanding": "Farage resigned his seat while under investigation by the Parliamentary Commissioner for Standards over undeclared financial support, saying he had \"done no wrongdoing and followed the rules\" and describing the investigations as an \"establishment hit job\". He has framed the by-election as \"people versus the establishment\" and says Clacton voters, rather than the press or parliamentary authorities, should decide whether he continues as their MP.",
     "keyPositions": [],
     "links": {
       "website": "https://www.reformparty.uk",
@@ -19,33 +208,32 @@
     ]
   },
   {
-    "slug": "count-binface",
-    "name": "Count Binface",
-    "party": "count-binface",
-    "status": "declared",
-    "declaredDate": "2026-07-08",
+    "slug": "attieh-fard",
+    "ballotName": "FARD, Attieh",
+    "name": "Attieh Fard",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Surrey Heath constituency",
+    "status": "nominated",
     "photo": null,
-    "bio": "A satirical \"intergalactic\" novelty candidate, the alter ego of comedian Jon Harvey. Count Binface has previously stood against senior politicians in their own seats, including Boris Johnson in Uxbridge, Rishi Sunak in Richmond and Keir Starmer in Holborn & St Pancras, campaigning on a deliberately absurd manifesto.",
-    "whyStanding": "With the main opposition parties declining to field candidates against Farage, Count Binface announced he would stand and was quickly framed in coverage and betting markets as the highest-profile challenger on the ballot. He has questioned whether rivals are \"running scared\".",
+    "bio": "",
     "keyPositions": [],
-    "links": {
-      "website": "https://www.countbinface.com",
-      "wikipedia": "https://en.wikipedia.org/wiki/Count_Binface"
-    },
+    "links": {},
     "sources": [
-      "https://www.itv.com/news/2026-07-08/count-binface-who-is-the-man-behind-the-bin",
-      "https://www.rte.ie/news/uk/2026/0708/1582378-uk-binface-byelection/"
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
     ]
   },
   {
     "slug": "laurence-fox",
+    "ballotName": "FOX, Laurence",
     "name": "Laurence Fox",
     "party": "reclaim",
-    "status": "declared",
-    "declaredDate": "2026-07-08",
+    "description": "The Reclaim Party",
+    "homeArea": "in the City of Colchester",
+    "status": "nominated",
     "photo": null,
-    "bio": "Actor and founder and leader of the Reclaim Party, which he set up in 2020. He stood as a candidate for Mayor of London in 2021.",
-    "whyStanding": "Fox has announced he will contest the by-election for the Reclaim Party.",
+    "bio": "Actor and founder and leader of the Reclaim Party, which he set up in 2020. He stood as a candidate for Mayor of London in 2021 and lives at West Mersea in Essex.",
+    "whyStanding": "Fox announced on 7 July 2026 that he would contest the by-election, saying he would offer a voice on the right and criticising the major parties' decision not to stand as undemocratic.",
     "keyPositions": [],
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Laurence_Fox"
@@ -55,14 +243,243 @@
     ]
   },
   {
+    "slug": "tony-francis",
+    "ballotName": "FRANCIS, Tony",
+    "name": "Tony Francis",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the district of Tendring",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "robin-green",
+    "ballotName": "GREEN, Robin",
+    "name": "Robin Green",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Erith and Thamesmead constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "abi-hookway",
+    "ballotName": "HOOKWAY, Abi",
+    "name": "Abi Hookway",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Doncaster East and the Isle of Axholme constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "whyStanding": "Hookway has campaigned on establishing local dentistry services and on support for local businesses.",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://en.wikipedia.org/wiki/2026_Clacton_by-election"
+    ]
+  },
+  {
+    "slug": "howling-laud-hope",
+    "ballotName": "HOPE, Howling Laud",
+    "name": "Howling Laud Hope",
+    "party": "monster-raving-loony",
+    "description": "The Official Monster Raving Loony Party",
+    "homeArea": "in Fleet, Hampshire",
+    "status": "nominated",
+    "photo": null,
+    "bio": "Leader of the Official Monster Raving Loony Party, which he has led since the death of founder Screaming Lord Sutch in 1999. He is one of three Loony candidates on the Clacton ballot.",
+    "keyPositions": [],
+    "links": {
+      "website": "https://www.loonyparty.com",
+      "wikipedia": "https://en.wikipedia.org/wiki/Howling_Laud_Hope"
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/2026_Clacton_by-election"
+    ]
+  },
+  {
+    "slug": "stephen-ingram",
+    "ballotName": "INGRAM, Stephen Richard",
+    "name": "Stephen Ingram",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Clacton constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "amy-morris",
+    "ballotName": "MORRIS, Amy",
+    "name": "Amy Morris",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Basildon and Billericay constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "derrick-morris",
+    "ballotName": "MORRIS, Derrick Norbert",
+    "name": "Derrick Morris",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Clacton constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "martyn-obrien",
+    "ballotName": "OBRIEN, Martyn",
+    "name": "Martyn Obrien",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Harrow West constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "michael-okeeffe",
+    "ballotName": "O'KEEFFE, Michael Noel",
+    "name": "Michael O'Keeffe",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Grantham and Bourne constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "nick-pelas",
+    "ballotName": "PELAS, Nick",
+    "name": "Nick Pelas",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Clacton constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "ketankumar-pipaliya",
+    "ballotName": "PIPALIYA, Ketankumar",
+    "name": "Ketankumar Pipaliya",
+    "party": "uk-voice",
+    "description": "UK VOICE safer and stronger UK",
+    "homeArea": "in the Watford constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "UK Voice's candidate for the by-election.",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "daniel-pocock",
+    "ballotName": "POCOCK, Daniel",
+    "name": "Daniel Pocock",
+    "party": "no-description",
+    "description": "No description",
+    "homeArea": "in Australia",
+    "status": "nominated",
+    "photo": null,
+    "bio": "Nominated without a party description, so his name appears on the ballot paper with no description beneath it.",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "james-ransley",
+    "ballotName": "RANSLEY, James",
+    "name": "James Ransley",
+    "party": "consensus",
+    "description": "Consensus Party Candidate",
+    "homeArea": "in the Ashford constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "The Consensus Party's candidate for the by-election.",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "gerry-smith",
+    "ballotName": "SMITH, Gerry",
+    "name": "Gerry Smith",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Glasgow North East constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
     "slug": "kai-stephens",
+    "ballotName": "STEPHENS, Kai",
     "name": "Kai Stephens",
     "party": "british-democrats",
-    "status": "declared",
-    "declaredDate": "2026-07-08",
+    "description": "British Democrats",
+    "homeArea": "in the Norwich North constituency",
+    "status": "nominated",
     "photo": null,
     "bio": "The British Democrats' candidate for the by-election. The British Democrats are a small nationalist party.",
-    "whyStanding": "Stephens has been announced as the British Democrats' candidate for Clacton.",
     "keyPositions": [],
     "links": {},
     "sources": [
@@ -70,14 +487,16 @@
     ]
   },
   {
-    "slug": "adham-alkhatip",
-    "name": "Adham Alkhatip",
-    "party": "forward",
-    "status": "declared",
-    "declaredDate": "2026-07-08",
+    "slug": "john-stevens",
+    "ballotName": "STEVENS, John",
+    "name": "John Stevens",
+    "party": "rejoin-eu",
+    "description": "Rejoin EU",
+    "homeArea": "in Belgium",
+    "status": "nominated",
     "photo": null,
-    "bio": "The Forward Party's candidate for the by-election.",
-    "whyStanding": "Alkhatip has been announced as the Forward Party's candidate for Clacton.",
+    "bio": "Deputy leader of Rejoin EU and a former Conservative Member of the European Parliament. He stood in Buckingham at the 2010 general election, finishing second to Speaker John Bercow and ahead of Nigel Farage.",
+    "whyStanding": "Stevens is standing on a platform of the UK rejoining the European Union.",
     "keyPositions": [],
     "links": {},
     "sources": [
@@ -85,33 +504,69 @@
     ]
   },
   {
-    "slug": "ollie-granger",
-    "name": "Ollie Granger",
+    "slug": "baron-von-thunderclap",
+    "ballotName": "VON THUNDERCLAP, Baron",
+    "name": "Baron Von Thunderclap",
+    "party": "monster-raving-loony",
+    "description": "The Official Monster Raving Loony Party",
+    "homeArea": "in Bolney, Sussex",
+    "status": "nominated",
+    "photo": null,
+    "bio": "One of three Official Monster Raving Loony Party candidates on the Clacton ballot.",
+    "keyPositions": [],
+    "links": {
+      "website": "https://www.loonyparty.com"
+    },
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "pamela-walford",
+    "ballotName": "WALFORD, Pamela",
+    "name": "Pamela Walford",
     "party": "independent",
-    "status": "declared",
-    "declaredDate": "2026-07-08",
+    "description": "Independent",
+    "homeArea": "in the Clacton constituency",
+    "status": "nominated",
     "photo": null,
-    "bio": "An independent candidate standing in the by-election.",
-    "whyStanding": "Granger has announced he will stand as an independent.",
+    "bio": "",
     "keyPositions": [],
     "links": {},
     "sources": [
-      "https://en.wikipedia.org/wiki/2026_Clacton_by-election"
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
     ]
   },
   {
-    "slug": "luke-worley",
-    "name": "Luke Worley",
-    "party": "independent",
-    "status": "declared",
-    "declaredDate": "2026-07-08",
+    "slug": "marcus-white",
+    "ballotName": "WHITE, Marcus",
+    "name": "Marcus White",
+    "party": "everyone-is-god",
+    "description": "Everyone is God Party",
+    "homeArea": "in the West Dorset constituency",
+    "status": "nominated",
     "photo": null,
-    "bio": "An independent candidate standing in the by-election.",
-    "whyStanding": "Worley has announced he will stand as an independent.",
+    "bio": "The Everyone is God Party's candidate for the by-election.",
     "keyPositions": [],
     "links": {},
     "sources": [
-      "https://en.wikipedia.org/wiki/2026_Clacton_by-election"
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
+    ]
+  },
+  {
+    "slug": "marc-wilkinson",
+    "ballotName": "WILKINSON, Marc",
+    "name": "Marc Wilkinson",
+    "party": "independent",
+    "description": "Independent",
+    "homeArea": "in the Edinburgh South constituency",
+    "status": "nominated",
+    "photo": null,
+    "bio": "",
+    "keyPositions": [],
+    "links": {},
+    "sources": [
+      "https://legacy.tendringdc.gov.uk/sites/default/files/documents/council/elections%20&%20voting/2026/Aug13/UKPGE%20-%20NOP%20SOP%20SOPN.pdf"
     ]
   }
 ]

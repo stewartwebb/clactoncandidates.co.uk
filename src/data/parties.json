@@ -7,17 +7,30 @@
     "leader": "Nigel Farage",
     "website": "https://www.reformparty.uk",
     "expectedToStand": true,
+    "candidateCount": 1,
     "summary": "Reform UK holds the seat, won by Nigel Farage in 2024 with 46.2% of the vote. The party campaigns on cutting immigration, leaving the European Convention on Human Rights, lower taxes, and reforming public services. Farage resigned the seat on 7 July 2026 and is standing again in the by-election."
   },
   {
     "slug": "count-binface",
-    "name": "Count Binface",
+    "name": "Count Binface Party",
     "shortName": "Count Binface",
     "color": "#5b6770",
     "leader": null,
     "website": "https://www.countbinface.com",
     "expectedToStand": true,
-    "summary": "A satirical novelty candidacy, the alter ego of comedian Jon Harvey, known for standing against senior politicians in their own seats. With the main opposition parties standing aside, Count Binface has been widely described as the highest-profile challenger to Nigel Farage on the ballot."
+    "candidateCount": 1,
+    "summary": "A satirical novelty candidacy, the alter ego of comedian Jon Harvey, known for standing against senior politicians in their own seats. With the main opposition parties standing aside, Count Binface has been widely described in coverage as the highest-profile challenger to Nigel Farage on the ballot."
+  },
+  {
+    "slug": "monster-raving-loony",
+    "name": "Official Monster Raving Loony Party",
+    "shortName": "Monster Raving Loony",
+    "color": "#d9a900",
+    "leader": "Howling Laud Hope",
+    "website": "https://www.loonyparty.com",
+    "expectedToStand": true,
+    "candidateCount": 3,
+    "summary": "A satirical party founded in 1983 by musician Screaming Lord Sutch, which stands joke candidates on deliberately absurd manifestos. It has three candidates on the Clacton ballot: leader Howling Laud Hope, Nick The Incredible Flying Brick and Baron Von Thunderclap."
   },
   {
     "slug": "reclaim",
@@ -27,7 +40,30 @@
     "leader": "Laurence Fox",
     "website": null,
     "expectedToStand": true,
+    "candidateCount": 1,
     "summary": "A small party founded by actor Laurence Fox in 2020, campaigning on free-speech and anti-\"woke\" themes. Fox is standing as the party's candidate in Clacton."
+  },
+  {
+    "slug": "sdp",
+    "name": "Social Democratic Party",
+    "shortName": "SDP",
+    "color": "#4a5c8c",
+    "leader": "William Clouston",
+    "website": "https://sdp.org.uk",
+    "expectedToStand": true,
+    "candidateCount": 1,
+    "summary": "A small party descended from the Social Democratic Party founded in 1981, campaigning on a platform that pairs economic intervention with social conservatism. Its leader, William Clouston, is its candidate in Clacton."
+  },
+  {
+    "slug": "rejoin-eu",
+    "name": "Rejoin EU",
+    "shortName": "Rejoin EU",
+    "color": "#003399",
+    "leader": null,
+    "website": null,
+    "expectedToStand": true,
+    "candidateCount": 1,
+    "summary": "A single-issue party campaigning for the UK to rejoin the European Union. Its candidate in Clacton — one of the most strongly Leave-voting constituencies in the 2016 referendum — is its deputy leader John Stevens, a former Conservative MEP."
   },
   {
     "slug": "british-democrats",
@@ -37,17 +73,63 @@
     "leader": null,
     "website": null,
     "expectedToStand": true,
-    "summary": "A small nationalist party. It has named Kai Stephens as its candidate for the by-election."
+    "candidateCount": 1,
+    "summary": "A small nationalist party. Its candidate in Clacton is Kai Stephens."
   },
   {
     "slug": "forward",
-    "name": "Forward Party",
+    "name": "The Forward Party",
     "shortName": "Forward Party",
     "color": "#00857c",
     "leader": null,
     "website": null,
     "expectedToStand": true,
+    "candidateCount": 1,
     "summary": "A small party fielding Adham Alkhatip as its candidate in the by-election."
+  },
+  {
+    "slug": "freedom-alliance",
+    "name": "Freedom Alliance",
+    "shortName": "Freedom Alliance",
+    "color": "#6b8e5a",
+    "leader": null,
+    "website": null,
+    "expectedToStand": true,
+    "candidateCount": 1,
+    "summary": "A small party formed in 2020 that campaigns on civil liberties and individual freedom of choice. Its candidate, Martin Davies, appears on the ballot under the description \"Freedom Alliance - Real People, Real Alternative!\"."
+  },
+  {
+    "slug": "uk-voice",
+    "name": "UK Voice",
+    "shortName": "UK Voice",
+    "color": "#7a5ea8",
+    "leader": null,
+    "website": null,
+    "expectedToStand": true,
+    "candidateCount": 1,
+    "summary": "A small registered party. Its candidate, Ketankumar Pipaliya, appears on the ballot under the description \"UK VOICE safer and stronger UK\"."
+  },
+  {
+    "slug": "consensus",
+    "name": "Consensus Party",
+    "shortName": "Consensus",
+    "color": "#2f7d8c",
+    "leader": null,
+    "website": null,
+    "expectedToStand": true,
+    "candidateCount": 1,
+    "summary": "A small registered party. Its candidate in Clacton is James Ransley."
+  },
+  {
+    "slug": "everyone-is-god",
+    "name": "Everyone is God Party",
+    "shortName": "Everyone is God",
+    "color": "#9a6b4f",
+    "leader": null,
+    "website": null,
+    "expectedToStand": true,
+    "candidateCount": 1,
+    "summary": "A small registered party. Its candidate in Clacton is Marcus White."
   },
   {
     "slug": "conservative",
@@ -69,7 +151,7 @@
     "website": "https://labour.org.uk",
     "expectedToStand": false,
     "notStanding": true,
-    "summary": "Labour, the party of government nationally, finished third in Clacton in 2024 with 16.2% of the vote. It has said it will not contest the by-election, with senior figures calling the circumstances of Farage's resignation \"pathetic\"."
+    "summary": "Labour, the party of government nationally, finished third in Clacton in 2024 with 16.2% of the vote. It is not contesting the by-election, with senior figures calling the circumstances of Farage's resignation \"pathetic\"."
   },
   {
     "slug": "liberal-democrats",
@@ -80,7 +162,7 @@
     "website": "https://www.libdems.org.uk",
     "expectedToStand": false,
     "notStanding": true,
-    "summary": "The Liberal Democrats took 4.4% in Clacton in 2024 and led calls for an expanded standards inquiry into the financial support received by Nigel Farage. Leader Ed Davey has said the party will not stand and has urged others to do the same, arguing the resignation should not be rewarded with a contest."
+    "summary": "The Liberal Democrats took 4.4% in Clacton in 2024 and led calls for an expanded standards inquiry into the financial support received by Nigel Farage. Leader Ed Davey said the party would not stand and urged others to do the same, arguing the resignation should not be rewarded with a contest."
   },
   {
     "slug": "green",
@@ -91,7 +173,18 @@
     "website": "https://www.greenparty.org.uk",
     "expectedToStand": false,
     "notStanding": true,
-    "summary": "The Green Party polled 4.2% in Clacton in 2024. It has said it will not contest the by-election, describing it as designed to \"serve Nigel Farage's personal political ambitions\"."
+    "summary": "The Green Party polled 4.2% in Clacton in 2024. It is not contesting the by-election, describing it as designed to \"serve Nigel Farage's personal political ambitions\"."
+  },
+  {
+    "slug": "restore-britain",
+    "name": "Restore Britain",
+    "shortName": "Restore Britain",
+    "color": "#7b3f4e",
+    "leader": "Rupert Lowe",
+    "website": null,
+    "expectedToStand": false,
+    "notStanding": true,
+    "summary": "The party founded by Rupert Lowe, who was elected as a Reform UK MP in 2024 before leaving the party. Lowe said Restore Britain would not take part in what he described as a Reform-sponsored media circus."
   },
   {
     "slug": "independent",
@@ -100,7 +193,21 @@
     "color": "#999999",
     "leader": null,
     "website": null,
-    "expectedToStand": false,
-    "summary": "Independent candidates and smaller parties frequently stand in high-profile by-elections. Ollie Granger and Luke Worley have declared as independents, and other parties including the Monster Raving Loony Party and Rejoin EU have said they intend to field candidates. Any further independents who declare will be listed here."
+    "expectedToStand": true,
+    "grouping": true,
+    "candidateCount": 19,
+    "summary": "Nineteen of the 34 candidates on the ballot are standing as independents — the largest single block in the contest. Four give an address in the Clacton constituency and one more elsewhere in the Tendring district; the rest come from across the UK. Independents appear on the ballot paper with the description \"Independent\" and no party emblem."
+  },
+  {
+    "slug": "no-description",
+    "name": "No description",
+    "shortName": "No description",
+    "color": "#8b96a5",
+    "leader": null,
+    "website": null,
+    "expectedToStand": true,
+    "grouping": true,
+    "candidateCount": 1,
+    "summary": "Candidates may choose to stand with no description at all, in which case their name appears on the ballot paper on its own. One candidate, Daniel Pocock, has done so."
   }
 ]

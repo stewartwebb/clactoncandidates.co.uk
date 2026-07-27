@@ -3,12 +3,14 @@ import parties from '../data/parties.json';
 
 interface Candidate {
   slug: string;
+  ballotName: string;
   name: string;
   party: string;
+  description: string;
+  homeArea: string;
   status: string;
-  declaredDate: string | null;
   photo: string | null;
-  bio: string;
+  bio?: string;
   whyStanding?: string;
   keyPositions: string[];
   links: Record<string, string>;
@@ -27,33 +29,26 @@ const party = parties.find((p) => p.slug === candidate.party);
 const statusLabels: Record<string, string> = {
   declared: 'Declared',
   expected: 'Expected',
-  nominated: 'Officially nominated',
+  nominated: 'On the ballot',
   withdrawn: 'Withdrawn',
 };
 
 const linkLabels: Record<string, string> = {
   website: 'Website',
+  campaign: 'Campaign site',
   wikipedia: 'Wikipedia',
   twitter: 'X (Twitter)',
   facebook: 'Facebook',
 };
-
-const dateFmt = candidate.declaredDate
-  ? new Date(candidate.declaredDate).toLocaleDateString('en-GB', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric',
-    })
-  : null;
 ---
 
-<article class="card candidate">
+<article class="card candidate" id={compact ? undefined : candidate.slug}>
   <header>
     <div>
       <h3>{candidate.name}</h3>
       <p class="party">
         <span class="party-dot" style={`background:${party?.color ?? '#999'}`} aria-hidden="true"></span>
-        {party?.name ?? candidate.party}
+        {candidate.description}
       </p>
     </div>
     <span class:list={['badge', { declared: candidate.status !== 'withdrawn' }]}>
@@ -61,9 +56,13 @@ const dateFmt = candidate.declaredDate
     </span>
   </header>
 
-  {dateFmt && <p class="small muted">Standing confirmed {dateFmt}</p>}
+  {!compact && (
+    <p class="small muted meta">
+      On the ballot paper as <strong>{candidate.ballotName}</strong>. Home address {candidate.homeArea}.
+    </p>
+  )}
 
-  {!compact && <p>{candidate.bio}</p>}
+  {!compact && candidate.bio && <p>{candidate.bio}</p>}
   {!compact && candidate.whyStanding && <p>{candidate.whyStanding}</p>}
 
   {!compact && candidate.keyPositions.length > 0 && (
@@ -105,11 +104,15 @@ const dateFmt = candidate.declaredDate
     gap: 0.75rem;
   }
 
+  .candidate header .badge { white-space: nowrap; }
+
   .party {
     margin: 0.15rem 0 0;
     color: var(--ink-secondary);
     font-size: 0.9375rem;
   }
+
+  .meta { margin: 0.75rem 0 0; }
 
   h4 {
     margin: 1rem 0 0.25rem;

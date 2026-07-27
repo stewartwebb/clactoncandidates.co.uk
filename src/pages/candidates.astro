@@ -1,73 +1,97 @@
 ---
 import Base from '../layouts/Base.astro';
+import BallotList from '../components/BallotList.astro';
 import CandidateCard from '../components/CandidateCard.astro';
-import PartyCard from '../components/PartyCard.astro';
 import candidates from '../data/candidates.json';
-import parties from '../data/parties.json';
+import election from '../data/election.json';
 
-const declared = candidates.filter((c) => c.status !== 'withdrawn');
+const onBallot = candidates.filter((c) => c.status !== 'withdrawn');
 const withdrawn = candidates.filter((c) => c.status === 'withdrawn');
-
-const declaredPartySlugs = new Set(declared.map((c) => c.party));
-const awaiting = parties.filter(
-  (p) => p.expectedToStand && !declaredPartySlugs.has(p.slug)
-);
+const independents = onBallot.filter((c) => c.party === 'independent').length;
 ---
 
 <Base
   title="Candidates — Clacton By-Election 2026"
-  description="Every declared candidate in the 2026 Clacton by-election, with biographies, positions and sources — updated as parties confirm their candidates."
+  description="All 34 candidates on the ballot paper in the 2026 Clacton by-election — a record for a UK by-election — with descriptions, biographies and sources."
 >
   <h1>The candidates</h1>
   <p class="lede">
-    Everyone standing in the by-election, updated as each candidate is
-    confirmed. The definitive list is the Statement of Persons Nominated,
-    published by Tendring District Council after nominations close.
+    A record {onBallot.length} candidates are standing in the Clacton
+    by-election — more than at any previous UK parliamentary by-election. They
+    are listed here in ballot-paper order, exactly as they appear on the
+    Statement of Persons Nominated.
   </p>
 
   <div class="notice">
-    <strong>Nominations have not yet opened.</strong> Candidates listed as
-    "declared" have publicly announced they will stand; the ballot is only
-    final when the Statement of Persons Nominated is published. Unusually, the
-    main opposition parties — Labour, the Conservatives, the Liberal Democrats
-    and the Greens — have said they will <em>not</em> contest this by-election.
-    See <a href="/parties/">the parties page</a> for who is standing and who is standing aside.
+    <strong>Nominations closed on Friday 17 July 2026 — this list is final.</strong>
+    {' '}The {onBallot.length} names below beat the previous record of {election.previousRecord.count} at
+    the {election.previousRecord.contest}, and {independents} of them are standing as
+    independents. Unusually, the main opposition parties — Labour, the
+    Conservatives, the Liberal Democrats and the Greens — chose <em>not</em> to
+    contest this by-election.
+    {' '}<a href="/parties/">See who is standing and who stood aside →</a>
   </div>
 
-  <h2>Declared candidates</h2>
-  <div class="grid">
-    {declared.map((c) => <CandidateCard candidate={c} />)}
-  </div>
+  <h2>The ballot paper</h2>
+  <p class="muted">
+    Ballot papers list candidates alphabetically by surname. Tap a name to jump
+    to their entry.
+  </p>
+  <BallotList linkToCandidates />
+  <p class="small muted">
+    Official source: the <a href={election.sopnUrl} rel="noopener">Statement of Persons Nominated and Notice of Poll (PDF)</a>,
+    published by {election.returningAuthority}.
+  </p>
 
-  {awaiting.length > 0 && (
-    <>
-      <h2>Awaiting a candidate</h2>
-      <p class="muted">
-        These parties stood in Clacton in 2024 or are expected to contest the
-        by-election, but have not yet announced who will stand.
-      </p>
-      <div class="grid">
-        {awaiting.map((p) => <PartyCard party={p} awaiting />)}
-      </div>
-    </>
-  )}
+  <h2>Every candidate</h2>
+  <p class="muted">
+    Entries are short where little is on the public record — several candidates
+    have no published campaign material. Every candidate on the ballot is
+    offered the same space on the same terms; see
+    the <a href="/about/">about page</a> to add or correct an entry.
+  </p>
+  <div class="candidate-list">
+    {onBallot.map((c) => <CandidateCard candidate={c} />)}
+  </div>
 
   {withdrawn.length > 0 && (
     <>
       <h2>Withdrawn</h2>
-      <div class="grid">
+      <div class="candidate-list">
         {withdrawn.map((c) => <CandidateCard candidate={c} />)}
       </div>
     </>
   )}
 
-  <h2>Could anyone else stand?</h2>
+  <h2>Why are there so many candidates?</h2>
   <p>
-    Yes. Anyone eligible can stand by submitting nomination papers signed by
-    ten local electors and a £500 deposit once the election notice is
-    published. High-profile by-elections typically attract a long ballot of
-    smaller parties and independents. Official candidate data will also appear
-    on <a href="https://whocanivotefor.co.uk/" rel="noopener">WhoCanIVoteFor</a> (Democracy
-    Club) once nominations close.
+    Anyone eligible can stand for parliament by submitting nomination papers
+    signed by ten electors registered in the constituency, along with a £500
+    deposit, which is returned if the candidate wins at least 5% of the vote.
+    High-profile by-elections attract long ballots, and the decision of the
+    main opposition parties to stand aside left an unusually open field. Several
+    people who announced they would stand — including Piers Corbyn and the
+    independents Ollie Granger and Luke Worley — did not file nomination papers
+    by the deadline and are not on the ballot.
+  </p>
+  <p>
+    Candidate data is also published
+    by <a href="https://whocanivotefor.co.uk/" rel="noopener">WhoCanIVoteFor</a> (Democracy
+    Club), which collects candidate statements and contact details.
   </p>
 </Base>
+
+<style>
+  /* Cards vary a lot in length, so flow them in columns rather than a
+     row-aligned grid, which would leave short entries mostly empty. */
+  .candidate-list {
+    columns: 20rem;
+    column-gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .candidate-list :global(.card) {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+</style>

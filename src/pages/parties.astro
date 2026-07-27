@@ -3,23 +3,27 @@ import Base from '../layouts/Base.astro';
 import PartyCard from '../components/PartyCard.astro';
 import ResultsBar from '../components/ResultsBar.astro';
 import parties from '../data/parties.json';
+import candidates from '../data/candidates.json';
 
-const standing = parties.filter((p) => p.slug !== 'independent' && !p.notStanding);
+const standing = parties.filter((p) => !p.notStanding && !p.grouping);
 const notStanding = parties.filter((p) => p.notStanding);
-const independent = parties.find((p) => p.slug === 'independent');
+const groupings = parties.filter((p) => p.grouping);
+const partyCandidates = candidates.filter(
+  (c) => !['independent', 'no-description'].includes(c.party)
+).length;
 ---
 
 <Base
   title="Parties — Clacton By-Election 2026"
-  description="The parties contesting the 2026 Clacton by-election: their leaders, platforms and 2024 performance in the constituency."
+  description="The parties contesting the 2026 Clacton by-election, the parties standing aside, and how each did in Clacton in 2024."
 >
   <h1>The parties</h1>
   <p class="lede">
-    An unusual field. After Nigel Farage resigned and stood again, the main
-    opposition parties said they would not contest the by-election, leaving
-    Reform UK facing a line-up of smaller parties, novelty candidates and
-    independents. Platform summaries are kept short and neutral — follow the
-    links for each party's own material.
+    An unusual field. After Nigel Farage resigned and stood again, every main
+    opposition party said it would not contest the by-election, leaving Reform
+    UK facing {partyCandidates - 1} candidates from smaller parties and {candidates.length - partyCandidates} independents
+    and unlabelled candidates. Platform summaries are kept short and neutral —
+    follow the links for each party's own material.
   </p>
 
   <h2>Standing in the by-election</h2>
@@ -31,9 +35,10 @@ const independent = parties.find((p) => p.slug === 'independent');
     <>
       <h2>Not standing</h2>
       <p class="muted">
-        These parties contested Clacton in 2024 but have said they will not put
-        up a candidate this time. Their own words on why are summarised below;
-        the percentages show how each did in the constituency in 2024.
+        These parties either contested Clacton in 2024 or hold seats nationally,
+        but have not put up a candidate this time. Their own words on why are
+        summarised below; the percentages show how each did in the constituency
+        in 2024.
       </p>
       <div class="grid">
         {notStanding.map((p) => <PartyCard party={p} notStanding />)}
@@ -41,10 +46,11 @@ const independent = parties.find((p) => p.slug === 'independent');
     </>
   )}
 
-  {independent && (
+  {groupings.length > 0 && (
     <>
-      <h2>Independents and smaller parties</h2>
-      <p>{independent.summary}</p>
+      <h2>Independents and unlabelled candidates</h2>
+      {groupings.map((p) => <p>{p.summary}</p>)}
+      <p><a href="/candidates/">See every candidate in ballot-paper order →</a></p>
     </>
   )}
 

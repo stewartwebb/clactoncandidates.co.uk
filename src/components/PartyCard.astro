@@ -10,6 +10,8 @@ interface Party {
   website: string | null;
   expectedToStand: boolean;
   notStanding?: boolean;
+  grouping?: boolean;
+  candidateCount?: number;
   summary: string;
 }
 
@@ -34,6 +36,11 @@ const result2024 = election.result2024.results.find((r) => r.party === party.slu
     </h3>
     {awaiting && <span class="badge">No candidate yet</span>}
     {notStanding && <span class="badge">Not standing</span>}
+    {!awaiting && !notStanding && party.candidateCount && (
+      <span class="badge declared">
+        {party.candidateCount === 1 ? '1 candidate' : `${party.candidateCount} candidates`}
+      </span>
+    )}
   </header>
 
   {awaiting ? (
@@ -67,4 +74,6 @@ const result2024 = election.result2024.results.find((r) => r.party === party.slu
     align-items: flex-start;
     gap: 0.75rem;
   }
+
+  header .badge { white-space: nowrap; }
 </style>

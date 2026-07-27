@@ -1,0 +1,48 @@
+---
+import candidates from '../data/candidates.json';
+import parties from '../data/parties.json';
+
+interface Props {
+  /** Link each name to its full entry on the candidates page */
+  linkToCandidates?: boolean;
+}
+
+const { linkToCandidates = false } = Astro.props;
+const partyColor = (slug: string) =>
+  parties.find((p) => p.slug === slug)?.color ?? '#999999';
+---
+
+<ol class="ballot">
+  {candidates.map((c) => (
+    <li>
+      <span class="party-dot" style={`background:${partyColor(c.party)}`} aria-hidden="true"></span>
+      <span class="name">
+        {linkToCandidates ? <a href={`/candidates/#${c.slug}`}>{c.ballotName}</a> : c.ballotName}
+      </span>
+      <span class="desc muted small">{c.description}</span>
+    </li>
+  ))}
+</ol>
+
+<style>
+  .ballot {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-content: start;
+    column-gap: 0.1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .name { font-weight: 600; }
+  .desc { grid-column: 2; }
+</style>

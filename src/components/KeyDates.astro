@@ -20,7 +20,7 @@ const dateFmt = (iso: string | null) =>
         <dt>{kd.label}</dt>
         <dd>
           {kd.date ? (
-            <strong>{dateFmt(kd.date)}</strong>
+            <span><strong>{dateFmt(kd.date)}</strong>{kd.note ? <span class="muted"> — {kd.note}</span> : null}</span>
           ) : (
             <span class="muted">TBC{kd.note ? ` — ${kd.note}` : ''}</span>
           )}
@@ -28,7 +28,12 @@ const dateFmt = (iso: string | null) =>
       </div>
     ))}
   </dl>
-  {!election.pollingDay && (
+  {election.writMoved ? (
+    <p class="small muted">
+      The timetable is set by the writ moved in the Commons on 9 July 2026 and is administered
+      by <a href={election.councilElectionsUrl} rel="noopener">Tendring District Council</a>, the returning authority for the constituency.
+    </p>
+  ) : (
     <p class="small muted">
       Dates are set once the by-election writ is moved in the House of Commons.
       This page will be updated the day the timetable is confirmed.
